@@ -1,0 +1,32 @@
+footer {
+  background-color: #000c2F;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  overflow: hidden;
+}
+
+footer .footer-left {
+  width: 50%;
+}
+
+footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .footer-copyright {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=stylesheet.css.map */

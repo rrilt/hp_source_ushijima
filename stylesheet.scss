@@ -1,0 +1,35 @@
+  
+$navy:#000c2F;
+$red:#CA2420;
+$black:#000000;
+$white:#ffffff;
+$gray:#707070;
+
+footer{
+    background-color:$navy;
+    padding-top:0.5rem;
+    padding-bottom:0.2rem;
+    overflow: hidden;
+
+    .footer-left{
+        width:50%;       
+    }
+
+    .footer-right{
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-end;
+        
+        }
+
+
+    .footer-copyright{
+        text-align: center;
+    }
+    
+}
+
+li{
+    list-style: none;
+}
+
