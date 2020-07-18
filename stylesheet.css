@@ -1,32 +1,101 @@
-footer {
-  background-color: #000c2F;
-  padding-top: 0.5rem;
-  padding-bottom: 0.2rem;
-  overflow: hidden;
+.container1100 {
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 
-footer .footer-left {
-  width: 50%;
+li {
+  list-style: none;
 }
 
-footer .footer-right {
+header {
+  background-color: #ffffff;
+  height: 72px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-logo {
+  padding-left: 48px;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-list {
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-footer .footer-copyright {
-  text-align: center;
+footer {
+  background-color: #000c2F;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
 }
 
-li {
-  list-style: none;
+footer .container1100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container1100 .footer-left {
+  width: 50%;
+}
+
+footer .container1100 .footer-left .footer-address {
+  display: block;
+}
+
+footer .container1100 .footer-right {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer .container1100 .footer-right ul {
+  width: 33%;
+}
+
+footer .container1100 .footer-right li {
+  font-size: small;
+  line-height: 2.7;
+}
+
+footer .footer-copyright {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=stylesheet.css.map */
