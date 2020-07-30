@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>お問い合わせフォーム</title>
+		<meta name="robots" content="noindex,nofollow" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="css\mailform.css" />
+		
+		<!-- ご希望の日時選択ライブラリここから -->
+		<link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+		<!-- ご希望の日時選択ライブラリここまで -->
+	</head>
+<body>
+<header>
+				<div class="container1100">
+				 <div class="header-logo"><h2>牛島産業</h2></div>
+				  <nav>
+				   <ul>
+					  <li><a href="company.html">会社情報</a></li>
+					  <li><a href="service.html">事業内容</a></li>
+					  <li><a href="#">施工事例</a></li>
+					  <li><a href="recruit.html">求人情報</a></li>
+					  <li><a href="#">お問い合わせ</a></li>
+					</ul>
+				  </nav>
+			   </div>
+</header>
+<section class="head-title"><h1>お問い合わせ</h1></section>
+<form action="php/mailform.php" method="post" id="mail_form">
+			<dl>
+				<dt>お問い合わせの種類<span>Inquiry Kind</span></dt>
+				<dd>
+					<ul>
+						<li><label><input type="checkbox" class="kind" name="kind[]" value="土木事業について" />土木事業について</label></li>
+						<li><label><input type="checkbox" class="kind" name="kind[]" value="古物商業について" />古物商業について</label></li>
+						<li><label><input type="checkbox" class="kind" name="kind[]" value="その他お問い合わせ" />その他お問い合わせ</label></li>
+					</ul>
+				</dd>
+				
+				<dt>お問い合わせの内容<span>Contents</span></dt>
+				<dd class="required"><textarea id="contents" name="contents" cols="40" rows="5"></textarea></dd>
+				
+				<dt>お名前<span>Your Name</span></dt>
+				<dd class="required"><input type="text" id="name_1" name="name_1" value="" /> <input type="text" id="name_2" name="name_2" value="" /></dd>
+				
+				<dt>ふりがな<span>Name Reading</span></dt>
+				<dd><input type="text" id="read_1" name="read_1" value="" /> <input type="text" id="read_2" name="read_2" value="" /></dd>
+		
+				<dt>会社名<span>Company Name</span></dt>
+				<dd><input type="text" id="company" name="company" value="" /></dd>
+		
+				<dt>部署名<span>Department Name</span></dt>
+				<dd><input type="text" id="company" name="Department" value="" /></dd>
+		
+				<dt>役職名<span>Role Name</span></dt>
+				<dd><input type="text" id="company" name="role" value="" /></dd>
+				
+				<dt>メールアドレス<span>Mail Address</span></dt>
+				<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" /></dd>
+				
+				<dt>メールアドレス<br />(確認用)<span>Mail Address Confirm</span></dt>
+				<dd><input type="email" id="mail_address_confirm" name="mail_address_confirm" value="" /></dd>	
+
+				<dt>電話番号<span>Company Name</span></dt>
+				<dd><input type="text" id="telephone" name="telephone" value="" /></dd>
+				
+				<dt>返信方法のご希望<span>Response</span></dt>
+				<dd>
+					<ul>
+						<li><label><input type="checkbox" class="response" name="response[]" value="電話での返信を希望" />電話での返信を希望</label></li>
+						<li><label><input type="checkbox" class="response" name="response[]" value="メールでの返信を希望" />メールでの返信を希望</label></li>
+						<li><label><input type="checkbox" class="response" name="response[]" value="返信不要" />返信不要</label></li>
+					</ul>
+				</dd>
+				
+				
+				
+				
+			</dl>
+			
+			<p id="form_submit" ><input type="button"  id="form_submit_button"  value="送信する" /></p>
+</form>
+		
+		
+		
+<footer>
+			<div class="container1100">
+			<div class="footer-left">
+			 <div class="footer-logo">牛島産業</div>
+			 <div class="address"><span>〒860-0048</span>
+			  熊本県熊本市西区池上町364
+			 </div>
+			</div>
+			<div class="footer-right">
+			  <ul>
+				<li><a href="">TOPへ</a></li>
+				<li><a href="">会社情報</a></li>
+				<li><a href="">事業内容</a></li>
+			  </ul>
+			  <ul>
+				<li><a href="">施工事例</a></li>
+				<li><a href="">採用情報</a></li>
+				<li><a href="">お問い合わせ</a></li>
+			  </ul>
+			  <ul>
+				<li><a href="">お知らせ</a></li>
+				<li><a href="">オンラインストア</a></li>
+				<li><a href="">プライバシーポリシー</a></li>
+			  </ul>
+			  
+			</div>
+		   
+		  </div>
+		  <div class="footer-copyright">Copyright © Usijima Sangyo Co. Ltd. All rights reserved.</div>
+</footer>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <script>
+	var mySwiper = new Swiper ('.swiper-container', {
+	  // ここからオプション
+	  loop: true,
+	  slidesPerView: "3",
+	  speed:15e3,
+	  spaceBetween: 0,
+	  autoplay: {
+		delay:0,
+
+	  },
+	})
+   </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+
+
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( '#name_1', '#read_1', {
+			katakana: false
+		});
+		$.fn.autoKana( '#name_2', '#read_2', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
+
+
+<!-- 住所自動入力ライブラリここから -->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- ご希望の日時選択ライブラリここから -->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ご希望の日時選択ライブラリここまで -->
+
+
+</body>
+
+</html>

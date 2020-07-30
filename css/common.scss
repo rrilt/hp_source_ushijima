@@ -5,6 +5,12 @@ $black:#000000;
 $white:#ffffff;
 $gray:#707070;
 
+.container800{
+    width: 800px;
+    margin: 0 auto;
+    position:relative;
+}
+
 .container1100 {
 	width: 1100px;
 	margin:0 auto;
@@ -16,6 +22,22 @@ $gray:#707070;
     margin:0 auto;
     position: relative;
     }
+
+.head-title{
+    background-color: $navy;   
+    width: 100%;     
+    height:260px;
+    display: flex;    
+    align-items: center;
+    h1{
+        font-size: 20px;
+        padding:24px 56px;
+        margin: auto auto auto 64px;
+        color:$black;
+        background-color:$white;
+        display: inline-block;
+    }
+}
 
 body{
     margin: 0;
@@ -160,6 +182,154 @@ a {
 }
 /*ボタン黒終わり*/
 
+/*ボタンオレンジ*/
+
+.btn-o p a {
+    background: $orange;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 55px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    width: 280px;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-o p a {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 4vw;
+    }
+}
+
+.btn-o p a:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 10px;
+    border-bottom: 1px solid lighten($color: $orange, $amount: 20);
+    transition: 0.3s;
+}
+
+.btn-o p a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    background: darken($color: $orange, $amount: 20);
+}
+
+.btn-o p a:hover:after {
+    width: 20px;
+}
+
+.btn-o p a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn-o p a .inner-text {
+    position: relative;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+
+/*ボタンオレンジ終わり*/
+
+/*ボタンポップ*/
+.btn-p a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    background-color: #fff;
+    width: 170px;
+    text-align: center;
+    line-height: 3.5em;
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 80px;
+    left: -85px;
+    z-index: 2;
+    transition: 0.5s;
+    
+    /*&:hover*/
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-p a {
+        bottom: -22px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        
+    }
+}
+
+.btn-p a:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 1px;
+    border-bottom: 1px solid #aaa;
+    position: absolute;
+    right: 25px;
+    bottom: 24px;
+    transition: 0.5s;
+}
+
+.btn-p a:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 1px;
+    border-bottom: 1px solid #aaa;
+    position: absolute;
+    right: 24px;
+    bottom: 25px;
+    transform: rotate(30deg);
+    transition: 0.5s;
+}
+
+.btn-p a:hover {
+    bottom: 90px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    btn-p a:hover {
+        bottom: -20px;
+        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0);
+    }
+}
+
+.btn-p a:hover:after {
+    right: 18px;
+}
+
+.btn-p a:hover:before {
+    right: 17px;
+}
+
+/*ボタンポップ終わり*/
+
 header{
     background-color: $white;
     height:72px;
@@ -174,7 +344,7 @@ header{
             padding-left: 48px;
             
         }
-        .header-list{
+        nav{
             width: 40%;           
             display: flex;   
             
@@ -281,7 +451,7 @@ footer{
             writing-mode:vertical-rl;
             position: relative;
             
-            #main-logo{
+            .main-logo{
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -291,7 +461,7 @@ footer{
                 white-space: nowrap;
                          
             }
-            #sub-logo{
+            .sub-logo{
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -495,8 +665,10 @@ footer{
              font-size: 20px;
              margin: 0 116px 0 116px;
          }
-        .btn-b{
+        .btn-o{
             margin: auto auto 0 auto;
+            position: absolute;
+            bottom: 0;
         }
     }
     .swiper-container{
@@ -508,6 +680,36 @@ footer{
         overflow: hidden;
         list-style: none;
         padding: 0;
-        z-index: 1;
+        z-index: -1;
+    }
+}
+
+.store-wrapper{
+    
+    .store-container{
+        width:1100px;
+        height:256px;
+        margin:164px auto 60px auto;
+        position: relative;
+        background-color: $navy;
+        figure{
+            position: absolute;
+            top: -84px;
+            left: -14px;
+        }
+        .store-right{
+            margin:0 0 0 auto;
+            width: 50%;
+            .store-text{
+                text-align: center;
+                font-size: 20px;
+                color: $white;
+                padding:64px 116px 56px 116px;
+                margin: 0;
+            }
+            .btn-w{
+                margin:0 auto;
+            }
+        }
     }
 }

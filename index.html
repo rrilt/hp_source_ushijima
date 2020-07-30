@@ -3,31 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>牛島産業</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css\common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery読み込み -->
+<!-- BootstrapのJS読み込み -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
     <header>
       <div class="container1100">
        <div class="header-logo"><h2>牛島産業</h2></div>
-        <div class="header-list">
+        <nav>
          <ul>
-            <li><a href="#">会社情報</a></li>
-            <li><a href="#">事業内容</a></li>
-            <li><a href="#">施工事例</a></li>
-            <li><a href="#">求人情報</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="company.html">会社情報</a></li>
+            <li><a href="service.html">事業内容</a></li>
+            <li><a href="works.html">施工事例</a></li>
+            <li><a href="recruit.html">求人情報</a></li>
+            <li><a href="mailform-v7.2.1\index.html">お問い合わせ</a></li>
           </ul>
-        </div>
+        </nav>
      </div>
     </header>
     <div class="view-wrapper">
       <div class="navi-wrapper">
         <div class="logo-container">
-          <p id="sub-logo">有限会社</p>
-          <p id="main-logo">牛島産業</p>
+          <p class="sub-logo">有限会社</p>
+          <h1 class="main-logo">牛島産業</h1>
         </div>
         <div class="menu-container">
           <ul>
@@ -160,8 +164,8 @@
       <div class="recruit-container">
         <h3>RECRUIT</h3>
         <h2>求人情報</h2>
-        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-        <div class="btn-b"><a href="#">求人情報へ</a></div>
+        <p>会社は、ビジネスという「フィールド」で一緒に勝負するチームのようなもの。私たちは、そこで働く一人ひとりがいきいきと活躍し、成長できる後押しをしていきたいと思っています。</p>
+        <div class="btn-o"><p><a href="#"><span class="inner-text">求人情報へ</span></a></p></div>
       </div>
       <div class="swiper-container">
         <!-- Sliderの内包コンテナ -->
@@ -175,7 +179,15 @@
         </div>       
     </div>
     </div>
-    <div class="store-wrapper"></div>
+    <div class="store-wrapper">
+      <div class="store-container">
+        <figure><img src="assets\store.png" alt=""></figure>
+        <div class="store-right">
+          <p class="store-text">内装工事や解体工事で買い取った骨董品を販売しています。</p>
+          <div class="btn-w"><a href="#">オンラインストアへ</a></div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container1100">
       <div class="footer-left">
@@ -212,8 +224,11 @@
       var mySwiper = new Swiper ('.swiper-container', {
         // ここからオプション
         loop: true,
+        slidesPerView: "3",
+        speed:15e3,
+        spaceBetween: 0,
         autoplay: {
-          delay: 10000,
+          delay:0,
 
         },
       })

@@ -1,0 +1,74 @@
+@import "common";
+
+.filter{
+    padding-top:40px;
+    padding-bottom:72px;
+    text-align: center;
+}
+
+.card-wrapper{
+    background-color: $navy;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;   
+    justify-content: space-around; 
+}
+
+.card{
+    width: 280px;
+    height:392px;    
+    background-color: $white;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    .card-contents{
+        width:260px;
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; 
+        .img-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 270px;
+        }
+        .text-card{
+            h3{
+                padding-top:22px;
+                font-size: 16px;
+                margin: 0;
+            }
+            h4{
+                margin: 0;
+                font-size: 12px;
+                padding-top:12px;
+            }
+            p{
+                font-size: 12px;
+                margin:16px 0 auto 4px;
+                padding:2px;
+                background-color:$gray;
+                color:$black;
+                display: inline-block;
+                line-height: 1;
+            }
+        }
+        
+    }
+    
+
+}
+
+.pagenation-wrapper{
+    width: 100%;
+    height:100px;
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        ul[
+            margin: 0 auto;
+        ]
+    }
+}

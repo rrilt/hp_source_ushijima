@@ -1,0 +1,67 @@
+@import"common";
+
+.container1100{
+    display:flex;
+}
+
+.text-container{
+    width:50%;
+}
+.img-container{
+    width:50%;
+}
+
+.intro{
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container{
+        h2{
+            padding-top:128px;
+            font-size: 40px;     
+            margin: 0;       
+        }
+        p{
+            padding-top: 28px;
+            padding-bottom:88px;
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    
+}
+
+.container1300{
+    display:flex;
+    .text-container{
+        text-align: center;
+        h3{
+            padding-top: 100px;
+            font-size: 80px;
+            padding-bottom: 72px;
+            margin:0;
+        }
+        p{
+            margin: 0 116px;
+            font-size: 16px;
+            padding-bottom: 48px;
+        }
+        .btn-b{
+            margin: 0 auto;
+        }        
+    }    
+}
+
+.civil{
+    .img-container{
+        margin:auto auto auto 0;
+    }
+}
+
+.antique{
+    .img-container{
+        margin: auto 0 auto auto;
+    }
+}
