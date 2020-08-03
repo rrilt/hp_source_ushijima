@@ -21,13 +21,17 @@
         h2{
             padding-top:128px;
             font-size: 40px;     
-            margin: 0;       
+            margin: 0;  
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal; 
         }
         p{
             padding-top: 28px;
             padding-bottom:88px;
             font-size: 16px;
             margin: 0;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal;
         }
     }
     
@@ -42,15 +46,45 @@
             font-size: 80px;
             padding-bottom: 72px;
             margin:0;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal;
         }
         p{
             margin: 0 116px;
             font-size: 16px;
             padding-bottom: 48px;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal;
         }
-        .btn-b{
-            margin: 0 auto;
-        }        
+        .btn-b {
+            @include btn(190px,$black);
+            margin:0 auto;
+        }
+        
+        .btn-b:before {
+           @include btn-before(190px,$black);
+        }
+        .btn-b:hover:before {
+            left: 0px;
+        }
+        
+        .btn-b a {
+            @include btn-a(14px,$black);
+        }
+        .btn-b a:after {
+            @include btn-a-after($black);
+            right: 15px;
+        }
+        .btn-b a:before {
+            @include btn-a-before($black);
+            right: 14px;
+        }
+        .btn-b a:hover:after {
+            right: 5px;
+        }
+        .btn-b a:hover:before {
+            right: 4px;
+        }       
     }    
 }
 

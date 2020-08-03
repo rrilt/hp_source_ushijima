@@ -36,11 +36,19 @@ $gray:#707070;
         color:$black;
         background-color:$white;
         display: inline-block;
+        font-family:  "Yu Mincho", "YuMincho", serif;
+        letter-spacing: 0.2em;
     }
 }
 
 body{
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+}
+
+/* IEだけに適応 */
+_:lang(x)::-ms-backdrop, .selector {
+	font-family: "Segoe UI", Meiryo, sans-serif;
 }
 
 li{
@@ -50,6 +58,11 @@ li{
 a {
     text-decoration: none;
   }
+
+.noto{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: normal;
+}
 
 /*ボタン定義*/
 
@@ -85,9 +98,10 @@ a {
     text-decoration: none;
     display: block;
     text-align: center;
-    line-height: 3.2em;
-    letter-spacing: 0.2em;
+    line-height: 3em;    
     position: relative;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: normal;
 }
 
 @mixin btn-a-after($color){
@@ -98,7 +112,7 @@ a {
     border-bottom: 1px solid $color;
     position: absolute;
     right: 25px;
-    bottom: 22px;
+    bottom: 20px;
     transition: 0.3s;
 }
 
@@ -110,7 +124,7 @@ a {
     border-bottom: 1px solid $color;
     position: absolute;
     right: 24px;
-    bottom: 23px;
+    bottom: 21px;
     transform: rotate(30deg);
     transition: 0.3s;
 }
@@ -194,8 +208,7 @@ a {
     line-height: 55px;
     overflow: hidden;
     position: relative;
-    text-align: center;
-    letter-spacing: 0.1em;
+    text-align: center;    
     text-decoration: none;
     width: 280px;
 }
@@ -263,7 +276,6 @@ a {
     width: 170px;
     text-align: center;
     line-height: 3.5em;
-    letter-spacing: 0.2em;
     position: absolute;
     bottom: 80px;
     left: -85px;
@@ -333,15 +345,19 @@ a {
 header{
     background-color: $white;
     height:72px;
+    
       .container1100{          
         display: flex;   
         justify-content: space-between;
 
         .header-logo{
    
-            width: 50%;
+            width: 50% ; 
             align-items: center;
             padding-left: 48px;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal;
+            letter-spacing: 0.2em;
             
         }
         nav{
@@ -354,26 +370,49 @@ header{
                 justify-content: flex-end; 
                 padding-right:40px;
                 margin:0;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
                 li{
                     padding-left: 12px;
                     padding-right:12px;
                     white-space: nowrap;
                     a{color:$black;
+                        position: relative;
+                    }
+                    a::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        width: 0%;
+                        height: 1px;
+                        background: $navy;
+                        transition: all 0.3s ease;
+                    }
+                    a:hover::before {
+                        width: 100%;
                     }
                 }
+                li.active a {
+                    border-bottom: 2px solid #008090;
+                } 
             }
             
             
         }
       }
 
-
-   
     
-
-    
-    
-    
+}
+.fixed ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #008090;
+    transition: all 0.3s ease;
 }
 
 footer{
@@ -395,11 +434,15 @@ footer{
             .footer-logo{
                 font-size:40px;
                 padding-bottom:24px; 
-                margin:0;               
+                margin:0;   
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;       
             }
             .address{
                 font-size:16px;
                 line-height: 1.8;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
                                 
                 span{
                     font-size: 16px;
@@ -414,6 +457,8 @@ footer{
             ul{
                 width: 33%;
                 padding:0;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
             }
             li{                              
                 line-height: 2.5;   
@@ -421,7 +466,22 @@ footer{
                     font-size: 12px;
                     white-space: nowrap;
                     color:$white;
-                }             
+                    position: relative;
+                }     
+                a::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 0%;
+                    height: 1px;
+                    background: $white;
+                    transition: all 0.3s ease;
+                }
+                a:hover::before {
+                    width: 100%;
+                }        
+                
             }
         }
 
@@ -453,12 +513,15 @@ footer{
             
             .main-logo{
                 position: absolute;
-                top: 50%;
+                top: 70%;
                 left: 50%;
                 margin: 0;
                 transform: translateY(-50%) translateX(-50%);   
                 font-size: 60px;
                 white-space: nowrap;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
+                letter-spacing: 16px;
                          
             }
             .sub-logo{
@@ -466,8 +529,11 @@ footer{
                 top: 50%;
                 left: 50%;
                 margin: 0;
-                transform: translateY(-50%) translateX(200%);      
-                font-size: 24px;         
+                transform: translateY(-50%) translateX(150%);      
+                font-size: 24px;     
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;  
+                letter-spacing: 10px;
             }
         }
         .menu-container{
@@ -478,7 +544,8 @@ footer{
                                       
             ul{
                 padding-left:0px;
-                
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
                
                 li{
                     text-align: center;
@@ -486,7 +553,21 @@ footer{
                     padding-bottom:12px;
                     a{
                         color: $black;
+                        position: relative;
                     }
+                    a::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        width: 0%;
+                        height: 1px;
+                        background: $navy;
+                        transition: all 0.3s ease;
+                    }
+                    a:hover::before {
+                        width: 100%;
+                    }       
                 }
             }
         }
@@ -503,6 +584,8 @@ footer{
             padding-top: 64px;
             margin: 0;
             color: $white;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: bold;
         }
         .news-container{
             padding-top:56px;
@@ -549,12 +632,16 @@ footer{
                 font-size: 16px;
                 color: $orange;
                 margin: 0;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
             }
             h2{
                 font-size: 30px;
                 padding-top: 20px;
                 padding-bottom: 64px;
                 margin: 0;
+                font-family: 'Noto Serif JP', serif;
+                font-weight:bold;
             }
             p{
                 font-size: 18px;
@@ -580,13 +667,17 @@ footer{
             text-align: center;
             margin: 0;
             color: $orange;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: normal;
         }
         h2{
             font-size: 32px;
             padding-top: 20px;
-            padding-bottom: 64px;
+            padding-bottom: 54px;
             text-align: center;
             margin: 0;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: bold;
         }
         .list-panel{
             display: flex;
@@ -605,6 +696,7 @@ footer{
                         position: relative;
                         overflow: hidden;
                         text-align: center;
+                        margin: 0;
                     }
                     .box-title{
                         position: absolute;
@@ -613,6 +705,7 @@ footer{
                         transform: translate(-50%, -50%);
                         width: 100%;
                         text-align: center;
+                        color: $white;
                     }
                     .box-text {
                         position: absolute;
@@ -622,12 +715,24 @@ footer{
                         min-height: 120px;
                         padding: 30px;
                         color: #fff;
-                        font-size: 1.4rem;
-                        line-height: 1.86;
+                        font-size: 12px;                        
                         opacity: 0;
                         transition: opacity 0.2s ease, bottom 0.2s ease;
                         word-break: break-all;
                     }
+                    &:hover {
+                        .box-title {
+                          margin-top: -35px;
+                          &::after {
+                            display: block;
+                          }
+                        }
+            
+                        .box-text {
+                          bottom: 0;
+                          opacity: 1;
+                        }
+                      }
                 }
             }
         }
@@ -654,12 +759,16 @@ footer{
              color: $orange;
              margin: 0 ;
              padding-top: 5px;
+             font-family: 'Noto Serif JP', serif;
+             font-weight: normal;
          }
          h2{
              font-size: 32px;
              margin: 0 ;
-             padding-top: 40px;
+             padding-top: 20px;
              padding-bottom: 80px;
+             font-family: 'Noto Serif JP', serif;
+             font-weight: bold;
          }
          p{
              font-size: 20px;
@@ -707,8 +816,34 @@ footer{
                 padding:64px 116px 56px 116px;
                 margin: 0;
             }
-            .btn-w{
+            .btn-w {
+                @include btn(190px,$white);
                 margin:0 auto;
+            }
+            
+            .btn-w:before {
+               @include btn-before(190px,$white);
+            }
+            .btn-w:hover:before {
+                left: 0px;
+            }
+            
+            .btn-w a {
+                @include btn-a(14px,$white);
+            }
+            .btn-w a:after {
+                @include btn-a-after($white);
+                right: 15px;
+            }
+            .btn-w a:before {
+                @include btn-a-before($white);
+                right: 14px;
+            }
+            .btn-w a:hover:after {
+                right: 5px;
+            }
+            .btn-w a:hover:before {
+                right: 4px;
             }
         }
     }
