@@ -198,7 +198,7 @@ a {
 
 /*ボタンオレンジ*/
 
-.btn-o p a {
+.btn-o a {
     background: $orange;
     color: #fff;
     display: block;
@@ -214,14 +214,14 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    .btn-o p a {
+    .btn-o a {
         width: 90%;
         margin: 0 auto;
         font-size: 4vw;
     }
 }
 
-.btn-o p a:after {
+.btn-o a:after {
     content: '';
     position: absolute;
     top: 18px;
@@ -233,7 +233,7 @@ a {
     transition: 0.3s;
 }
 
-.btn-o p a:before {
+.btn-o a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -246,16 +246,16 @@ a {
     background: darken($color: $orange, $amount: 20);
 }
 
-.btn-o p a:hover:after {
+.btn-o a:hover:after {
     width: 20px;
 }
 
-.btn-o p a:hover:before {
+.btn-o a:hover:before {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-.btn-o p a .inner-text {
+.btn-o a .inner-text {
     position: relative;
     z-index: 3;
     top: 0;
@@ -775,9 +775,9 @@ footer{
              margin: 0 116px 0 116px;
          }
         .btn-o{
-            margin: auto auto 0 auto;
             position: absolute;
             bottom: 0;
+            
         }
     }
     .swiper-container{

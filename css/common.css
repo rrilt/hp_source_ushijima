@@ -92,7 +92,7 @@ a {
   content: '';
   position: absolute;
   background: #ffffff;
-  /*の色*/
+  /*線の色*/
   top: 0;
   left: -170px;
   width: 170px;
@@ -232,7 +232,7 @@ a {
 
 /*ボタン黒終わり*/
 /*ボタンオレンジ*/
-.btn-o p a {
+.btn-o a {
   background: #EB9000;
   color: #fff;
   display: block;
@@ -248,14 +248,14 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .btn-o p a {
+  .btn-o a {
     width: 90%;
     margin: 0 auto;
     font-size: 4vw;
   }
 }
 
-.btn-o p a:after {
+.btn-o a:after {
   content: '';
   position: absolute;
   top: 18px;
@@ -268,7 +268,7 @@ a {
   transition: 0.3s;
 }
 
-.btn-o p a:before {
+.btn-o a:before {
   content: '';
   position: absolute;
   top: 0;
@@ -286,18 +286,18 @@ a {
   background: #855100;
 }
 
-.btn-o p a:hover:after {
+.btn-o a:hover:after {
   width: 20px;
 }
 
-.btn-o p a:hover:before {
+.btn-o a:hover:before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-.btn-o p a .inner-text {
+.btn-o a .inner-text {
   position: relative;
   z-index: 3;
   top: 0;
@@ -902,7 +902,6 @@ footer .footer-copyright {
 }
 
 .recruit-wrapper .recruit-container .btn-o {
-  margin: auto auto 0 auto;
   position: absolute;
   bottom: 0;
 }
