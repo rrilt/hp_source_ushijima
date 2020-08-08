@@ -46,9 +46,9 @@
             }
             p{
                 font-size: 12px;
-                margin:16px 0 auto 4px;
+                margin:16px 0 auto 0;
                 padding:2px;
-                background-color:$gray;
+                background-color:lighten($color: $gray, $amount: 40);
                 color:$black;
                 display: inline-block;
                 line-height: 1;
