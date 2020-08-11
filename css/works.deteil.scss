@@ -45,7 +45,16 @@
 .works-title{
     padding-top:80px;
     padding-bottom:12px;
+    p{
+        margin:0;
+        padding:5px;
+        background-color: lighten($color: $gray, $amount: 40);
+        color:$black;
+        line-height: 1;
+        display: inline-block;
+    }
 }
+
 
 .caption-wrapper{
     margin-top: 48px;

@@ -626,12 +626,14 @@ footer .footer-copyright {
   padding-top: 22px;
   font-size: 16px;
   margin: 0;
+  color: #000000;
 }
 
 .card .card-contents .text-card h4 {
   margin: 0;
   font-size: 12px;
   padding-top: 12px;
+  color: #000000;
 }
 
 .card .card-contents .text-card p {

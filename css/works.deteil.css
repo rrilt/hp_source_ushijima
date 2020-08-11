@@ -624,6 +624,15 @@ footer .footer-copyright {
   padding-bottom: 12px;
 }
 
+.works-title p {
+  margin: 0;
+  padding: 5px;
+  background-color: #d6d6d6;
+  color: #000000;
+  line-height: 1;
+  display: inline-block;
+}
+
 .caption-wrapper {
   margin-top: 48px;
   padding-top: 40px;
