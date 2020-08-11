@@ -2,113 +2,112 @@
 @import"color";
 @import"setting";
 
-.container800{
-    width: 800px;
+.container800 {
     margin: 0 auto;
-    position:relative;
+    position: relative;
+    width: 800px;
 }
 
 .container1100 {
-	width: 1100px;
-	margin:0 auto;
-	position: relative;
-    }
+    margin: 0 auto;
+    position: relative;
+    width: 1100px;
+}
 
 .container1300 {
-    width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
     position: relative;
-    }
+    width: 1300px;
+}
 
-.head-title{
-    background-color: $navy;   
-    width: 100%;     
-    height:260px;
-    display: flex;    
+.head-title {
     align-items: center;
-    h1{
-        font-size: 20px;
-        padding:24px 56px;
-        margin: auto auto auto 64px;
-        color:$black;
-        background-color:$white;
+    background-color: $navy;
+    display: flex;
+    height: 260px;
+    width: 100%;
+    h1 {
+        background-color: $white;
+        color: $black;
         display: inline-block;
-        font-family:  "Yu Mincho", "YuMincho", serif;
+        font-family: "Yu Mincho", "YuMincho", serif;
+        font-size: 20px;
         letter-spacing: 0.2em;
+        margin: auto auto auto 64px;
+        padding: 24px 56px;
     }
 }
 
-body{
-    margin: 0;
+body {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    margin: 0;
 }
 
 /* IEだけに適応 */
 _:lang(x)::-ms-backdrop, .selector {
-	font-family: "Segoe UI", Meiryo, sans-serif;
+    font-family: "Segoe UI", Meiryo, sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-  }
+}
 
 
 
-header{
+header {
     background-color: $white;
-    height:72px;
+    height: 72px;
+    left: 0;
     position: fixed;
-    top:0;
-    left:0;
-    width:100vw;
+    top: 0;
+    width: 100vw;
     z-index: 100;
-    
-      .container1100{          
-        display: flex;   
+
+    .container1100 {
+        display: flex;
         justify-content: space-between;
 
-        .header-logo{
-   
-            width: 50% ; 
+        .header-logo {
             align-items: center;
-            padding-left: 48px;
-            font-family: 'Noto Serif JP', serif;
+            font-family: "Noto Serif JP", serif;
             font-weight: normal;
             letter-spacing: 0.2em;
-            
+            padding-left: 48px;
+            width: 50% ;
         }
-        nav{
-            width: 40%;           
-            display: flex;   
-            
-            ul{
-                align-items: center; 
-                display:flex;
-                justify-content: flex-end; 
-                padding-right:40px;
-                margin:0;
-                font-family: 'Noto Serif JP', serif;
+        nav {
+            display: flex;
+            width: 40%;
+
+            ul {
+                align-items: center;
+                display: flex;
+                font-family: "Noto Serif JP", serif;
                 font-weight: normal;
-                li{
+                justify-content: flex-end;
+                margin: 0;
+                padding-right: 40px;
+                li {
                     padding-left: 12px;
-                    padding-right:12px;
+                    padding-right: 12px;
                     white-space: nowrap;
-                    a{color:$black;
+                    a {
+                        color: $black;
                         position: relative;
                     }
                     a::before {
-                        content: "";
-                        position: absolute;
-                        bottom: -2px;
-                        left: 0;
-                        width: 0%;
-                        height: 1px;
                         background: $navy;
+                        bottom: -2px;
+                        content: "";
+                        height: 1px;
+                        left: 0;
+                        position: absolute;
                         transition: all 0.3s ease;
+                        width: 0%;
                     }
                     a:hover::before {
                         width: 100%;
@@ -116,97 +115,89 @@ header{
                 }
                 li.active a {
                     border-bottom: 2px solid #008090;
-                } 
+                }
             }
-            
-            
         }
-      }
-
-    
+    }
 }
 
 
-footer{
-    background-color:$navy;
-    width: 100%;
-    padding-top:40px;
-    padding-bottom:16px;
+footer {
+    background-color: $navy;
+    color: $white;
     overflow: hidden;
+    padding-bottom: 16px;
+    padding-top: 40px;
     position: relative;
-    color:$white;    
-    .container1100{
+    width: 100%;
+    .container1100 {
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        box-sizing: border-box;
-        
-        .footer-left{
+
+        .footer-left {
             width: 50%;
-            .footer-logo{
-                font-size:40px;
-                padding-bottom:24px; 
-                margin:0;   
-                font-family: 'Noto Serif JP', serif;
-                font-weight: normal;       
-            }
-            address p{
-                font-style:normal;
-                font-size:16px;
-                line-height: 1.8;
-                font-family: 'Noto Serif JP', serif;
+            .footer-logo {
+                font-family: "Noto Serif JP", serif;
+                font-size: 40px;
                 font-weight: normal;
                 margin: 0;
-                                
-                span{
-                    font-size: 16px;
+                padding-bottom: 24px;
+            }
+            address p {
+                font-family: "Noto Serif JP", serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1.8;
+                margin: 0;
+                span {
                     display: block;
+                    font-size: 16px;
                 }
             }
         }
-        .footer-right{
-            width: 40%;
+        .footer-right {
             display: flex;
-            flex-wrap: wrap;            
-            ul{
-                width: 33%;
-                padding:0;
-                font-family: 'Noto Serif JP', serif;
+            flex-wrap: wrap;
+            width: 40%;
+            ul {
+                font-family: "Noto Serif JP", serif;
                 font-weight: normal;
+                padding: 0;
+                width: 33%;
             }
-            li{                              
-                line-height: 2.5;   
-                a{
+            li {
+                line-height: 2.5;
+                a {
+                    color: $white;
                     font-size: 12px;
-                    white-space: nowrap;
-                    color:$white;
                     position: relative;
-                }     
+                    white-space: nowrap;
+                }
                 a::before {
-                    content: "";
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0;
-                    width: 0%;
-                    height: 1px;
                     background: $white;
+                    bottom: -2px;
+                    content: "";
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
                     transition: all 0.3s ease;
+                    width: 0%;
                 }
                 a:hover::before {
                     width: 100%;
-                }        
-                
+                }
             }
         }
-
-    } 
-
-    .footer-copyright{
-        width: 100%;
-        text-align: center;
-        font-size: 10px;
-        padding-top:44px;
     }
-    
+
+    .footer-copyright {
+        font-size: 10px;
+        padding-top: 44px;
+        text-align: center;
+        width: 100%;
+    }
 }
 

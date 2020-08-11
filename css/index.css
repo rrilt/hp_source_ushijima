@@ -15,26 +15,26 @@
 /* ボタン定義終わり*/
 /*ボタン白*/
 .btn-w {
+  border-bottom: 1px solid #ffffff;
+  margin: auto 0;
+  overflow: hidden;
   position: relative;
   width: 170px;
-  margin: auto 0;
-  border-bottom: 1px solid #ffffff;
-  overflow: hidden;
   /* 上のボーダー */
   /*a*/
 }
 
 .btn-w:before {
   content: '';
-  position: absolute;
   background: #ffffff;
   /*線の色*/
+  height: 1px;
+  position: absolute;
   top: 0;
   left: -170px;
-  width: 170px;
-  height: 1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 170px;
 }
 
 .btn-w:hover:before {
@@ -92,26 +92,26 @@
 /*ボタン白終わり*/
 /*ボタン黒*/
 .btn-b {
+  border-bottom: 1px solid #000000;
+  margin: auto 0;
+  overflow: hidden;
   position: relative;
   width: 170px;
-  margin: auto 0;
-  border-bottom: 1px solid #000000;
-  overflow: hidden;
   /* 上のボーダー */
   /*a*/
 }
 
 .btn-b:before {
   content: '';
-  position: absolute;
   background: #000000;
   /*線の色*/
+  height: 1px;
+  position: absolute;
   top: 0;
   left: -170px;
-  width: 170px;
-  height: 1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 170px;
 }
 
 .btn-b:hover:before {
@@ -565,101 +565,101 @@ footer .footer-copyright {
 }
 
 header {
-  top: -60px;
-  opacity: 0;
   display: inline;
-  position: fixed;
   left: 0px;
+  opacity: 0;
+  position: fixed;
   right: 0px;
+  top: -60px;
   z-index: 999;
 }
 
 .view-wrapper {
   height: 100vh;
-  width: 100vw;
   position: relative;
+  width: 100vw;
 }
 
 .view-wrapper .view-swiper {
   height: 100%;
   overflow: hidden;
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 0;
 }
 
 .view-wrapper .view-swiper img {
-  width: 100vw;
   height: 100%;
+  width: 100vw;
 }
 
 .view-wrapper .navi-wrapper {
-  width: 30%;
-  height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
+  height: 100%;
   position: absolute;
+  width: 30%;
+  z-index: 1;
 }
 
 .view-wrapper .navi-wrapper .logo-container {
   height: 50%;
+  position: relative;
   width: 100%;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  position: relative;
 }
 
 .view-wrapper .navi-wrapper .logo-container .main-logo {
+  font-family: "Noto Serif JP", serif;
+  font-size: 60px;
+  font-weight: normal;
+  left: 50%;
+  letter-spacing: 16px;
+  margin: 0;
   position: absolute;
   top: 70%;
-  left: 50%;
-  margin: 0;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
-  font-size: 60px;
   white-space: nowrap;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: normal;
-  letter-spacing: 16px;
 }
 
 .view-wrapper .navi-wrapper .logo-container .sub-logo {
+  font-family: "Noto Serif JP", serif;
+  font-size: 24px;
+  font-weight: normal;
+  left: 50%;
+  letter-spacing: 10px;
+  margin: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin: 0;
   -webkit-transform: translateY(-50%) translateX(150%);
           transform: translateY(-50%) translateX(150%);
-  font-size: 24px;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: normal;
-  letter-spacing: 10px;
 }
 
 .view-wrapper .navi-wrapper .menu-container {
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .view-wrapper .navi-wrapper .menu-container ul {
-  padding-left: 0px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: normal;
+  padding-left: 0px;
 }
 
 .view-wrapper .navi-wrapper .menu-container ul li {
-  text-align: center;
-  padding-top: 12px;
   padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: center;
 }
 
 .view-wrapper .navi-wrapper .menu-container ul li a {
@@ -668,15 +668,15 @@ header {
 }
 
 .view-wrapper .navi-wrapper .menu-container ul li a::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  height: 1px;
   background: #001E38;
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 0%;
 }
 
 .view-wrapper .navi-wrapper .menu-container ul li a:hover::before {
@@ -689,48 +689,48 @@ header {
 }
 
 .news-wrapper .container1100 h2 {
-  text-align: center;
-  font-size: 24px;
-  padding-top: 64px;
-  margin: 0;
   color: #ffffff;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
+  font-size: 24px;
   font-weight: bold;
+  margin: 0;
+  padding-top: 64px;
+  text-align: center;
 }
 
 .news-wrapper .container1100 .news-container {
-  padding-top: 56px;
   padding-bottom: 10px;
+  padding-top: 56px;
 }
 
 .news-wrapper .container1100 .news-container .news {
-  text-align: center;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .news-wrapper .container1100 .news-container .news p {
-  font-size: 16px;
   color: #ffffff;
+  font-size: 16px;
   padding-right: 32px;
 }
 
 .news-wrapper .container1100 .news-container .news .genre {
-  font-size: 10px;
-  padding: 2px 16px;
-  color: #000000;
-  border-radius: 4px;
   background-color: #ffffff;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 10px;
   margin-right: 24px;
+  padding: 2px 16px;
 }
 
 .news-wrapper .container1100 .btn-w {
@@ -748,32 +748,32 @@ header {
 }
 
 .about-wrapper .container1100 .about-left {
-  width: 50%;
   padding-top: 92px;
+  width: 50%;
 }
 
 .about-wrapper .container1100 .about-left .title-en {
-  font-size: 16px;
   color: #EB9000;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
   font-weight: normal;
+  margin: 0;
 }
 
 .about-wrapper .container1100 .about-left .title-jp {
+  font-family: "Noto Serif JP", serif;
   font-size: 30px;
-  padding-top: 20px;
-  padding-bottom: 64px;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
   font-weight: bold;
+  margin: 0;
+  padding-bottom: 64px;
+  padding-top: 20px;
 }
 
 .about-wrapper .container1100 .about-left p {
   font-size: 18px;
+  margin: 0;
   padding-bottom: 12px;
   padding-right: 96px;
-  margin: 0;
 }
 
 .about-wrapper .container1100 .about-right {
@@ -785,23 +785,23 @@ header {
 }
 
 .work-wrapper .container1300 .title-en {
+  color: #EB9000;
+  font-family: "Noto Serif JP", serif;
   font-size: 16px;
+  font-weight: normal;
+  margin: 0;
   padding-top: 20px;
   text-align: center;
-  margin: 0;
-  color: #EB9000;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: normal;
 }
 
 .work-wrapper .container1300 .title-jp {
+  font-family: "Noto Serif JP", serif;
   font-size: 32px;
-  padding-top: 20px;
-  padding-bottom: 54px;
-  text-align: center;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
   font-weight: bold;
+  margin: 0;
+  padding-bottom: 54px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .work-wrapper .container1300 .list-panel {
@@ -814,37 +814,37 @@ header {
 }
 
 .work-wrapper .container1300 .list-panel .list-panel-items {
-  width: 33.33%;
-  padding: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0 auto;
+  width: 33.33%;
 }
 
 .work-wrapper .container1300 .list-panel .list-panel-items .panel {
   display: block;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .work-wrapper .container1300 .list-panel .list-panel-items .panel .image {
-  min-height: 300px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
   margin: 0;
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 
 .work-wrapper .container1300 .list-panel .list-panel-items .panel .box-title {
-  position: absolute;
-  top: 50%;
+  color: #ffffff;
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
   left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: normal;
 }
 
 .work-wrapper .container1300 .list-panel .list-panel-items .panel .box-title .box-en {
@@ -858,15 +858,15 @@ header {
 }
 
 .work-wrapper .container1300 .list-panel .list-panel-items .panel .box-text {
-  position: absolute;
-  left: 0;
-  right: 0;
   bottom: -35px;
-  min-height: 120px;
-  padding: 30px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 12px;
+  left: 0;
+  min-height: 120px;
   opacity: 0;
+  padding: 30px;
+  position: absolute;
+  right: 0;
   -webkit-transition: opacity 0.2s ease, bottom 0.2s ease;
   transition: opacity 0.2s ease, bottom 0.2s ease;
   word-break: break-all;
@@ -894,32 +894,32 @@ header {
 }
 
 .recruit-wrapper .recruit-container {
-  position: absolute;
-  background: #fff;
+  background: #FFFFFF;
   height: 100%;
-  right: 0;
   left: 0;
   margin: auto;
-  width: 512px;
+  position: absolute;
+  right: 0;
   text-align: center;
+  width: 512px;
 }
 
 .recruit-wrapper .recruit-container .title-en {
-  font-size: 16px;
   color: #EB9000;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: normal;
   margin: 0;
   padding-top: 5px;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: normal;
 }
 
 .recruit-wrapper .recruit-container .title-jp {
+  font-family: "Noto Serif JP", serif;
   font-size: 32px;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 80px;
-  font-family: 'Noto Serif JP', serif;
   font-weight: bold;
+  margin: 0;
+  padding-bottom: 80px;
+  padding-top: 20px;
 }
 
 .recruit-wrapper .recruit-container p {
@@ -928,37 +928,37 @@ header {
 }
 
 .recruit-wrapper .recruit-container .btn-o a {
+  bottom: 0;
+  left: 0;
   margin: auto;
   position: absolute;
   right: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .recruit-wrapper .recruit-swiper {
-  width: 100%;
   height: 568px;
+  list-style: none;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   overflow: hidden;
-  list-style: none;
   padding: 0;
+  position: relative;
+  width: 100%;
   z-index: -1;
 }
 
 .store-wrapper .store-container {
-  width: 1100px;
+  background-color: #001E38;
   height: 256px;
   margin: 164px auto 60px auto;
   position: relative;
-  background-color: #001E38;
+  width: 1100px;
 }
 
 .store-wrapper .store-container figure {
+  left: -14px;
   position: absolute;
   top: -84px;
-  left: -14px;
 }
 
 .store-wrapper .store-container figure img {
@@ -971,19 +971,19 @@ header {
 }
 
 .store-wrapper .store-container .store-right .store-text {
-  text-align: center;
-  font-size: 20px;
   color: #ffffff;
-  padding: 64px 116px 56px 116px;
+  font-size: 20px;
   margin: 0;
+  padding: 64px 116px 56px 116px;
+  text-align: center;
 }
 
 .store-wrapper .store-container .store-right .btn-w {
+  border-bottom: 1px solid #ffffff;
+  margin: auto 0;
+  overflow: hidden;
   position: relative;
   width: 190px;
-  margin: auto 0;
-  border-bottom: 1px solid #ffffff;
-  overflow: hidden;
   /* 上のボーダー */
   /*a*/
   margin: 0 auto;
@@ -991,15 +991,15 @@ header {
 
 .store-wrapper .store-container .store-right .btn-w:before {
   content: '';
-  position: absolute;
   background: #ffffff;
   /*線の色*/
+  height: 1px;
+  position: absolute;
   top: 0;
   left: -190px;
-  width: 190px;
-  height: 1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 190px;
 }
 
 .store-wrapper .store-container .store-right .btn-w:hover:before {

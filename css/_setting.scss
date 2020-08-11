@@ -2,25 +2,25 @@
 /*ボタン定義*/
 
 @mixin btn($width,$color){
+    border-bottom: 1px solid $color;
+    margin: auto 0;    
+    overflow: hidden;
     position: relative;
     width: $width;
-    margin: auto 0;
-    border-bottom: 1px solid $color;
-    overflow: hidden;
     /* 上のボーダー */
     /*a*/
 }
 
 @mixin btn-before($width,$color){
     content: '';
-    position: absolute;
     background:$color;
     /*線の色*/
+    height: 1px;
+    position: absolute;
     top: 0;
     left: -$width;
-    width: $width;
-    height: 1px;
     transition: 0.3s;
+    width: $width;
 }
 
 .btn:hover:before {

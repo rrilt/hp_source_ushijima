@@ -15,26 +15,26 @@
 /* ボタン定義終わり*/
 /*ボタン白*/
 .btn-w {
+  border-bottom: 1px solid #ffffff;
+  margin: auto 0;
+  overflow: hidden;
   position: relative;
   width: 170px;
-  margin: auto 0;
-  border-bottom: 1px solid #ffffff;
-  overflow: hidden;
   /* 上のボーダー */
   /*a*/
 }
 
 .btn-w:before {
   content: '';
-  position: absolute;
   background: #ffffff;
   /*線の色*/
+  height: 1px;
+  position: absolute;
   top: 0;
   left: -170px;
-  width: 170px;
-  height: 1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 170px;
 }
 
 .btn-w:hover:before {
@@ -92,26 +92,26 @@
 /*ボタン白終わり*/
 /*ボタン黒*/
 .btn-b {
+  border-bottom: 1px solid #000000;
+  margin: auto 0;
+  overflow: hidden;
   position: relative;
   width: 170px;
-  margin: auto 0;
-  border-bottom: 1px solid #000000;
-  overflow: hidden;
   /* 上のボーダー */
   /*a*/
 }
 
 .btn-b:before {
   content: '';
-  position: absolute;
   background: #000000;
   /*線の色*/
+  height: 1px;
+  position: absolute;
   top: 0;
   left: -170px;
-  width: 170px;
-  height: 1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 170px;
 }
 
 .btn-b:hover:before {
@@ -323,49 +323,49 @@
 
 /*ボタンポップ終わり*/
 .container800 {
-  width: 800px;
   margin: 0 auto;
   position: relative;
+  width: 800px;
 }
 
 .container1100 {
-  width: 1100px;
   margin: 0 auto;
   position: relative;
+  width: 1100px;
 }
 
 .container1300 {
-  width: 1300px;
   margin: 0 auto;
   position: relative;
+  width: 1300px;
 }
 
 .head-title {
-  background-color: #001E38;
-  width: 100%;
-  height: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #001E38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 260px;
+  width: 100%;
 }
 
 .head-title h1 {
-  font-size: 20px;
-  padding: 24px 56px;
-  margin: auto auto auto 64px;
-  color: #000000;
   background-color: #ffffff;
+  color: #000000;
   display: inline-block;
   font-family: "Yu Mincho", "YuMincho", serif;
+  font-size: 20px;
   letter-spacing: 0.2em;
+  margin: auto auto auto 64px;
+  padding: 24px 56px;
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  margin: 0;
 }
 
 /* IEだけに適応 */
@@ -384,9 +384,9 @@ a {
 header {
   background-color: #ffffff;
   height: 72px;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100vw;
   z-index: 100;
 }
@@ -401,21 +401,21 @@ header .container1100 {
 }
 
 header .container1100 .header-logo {
-  width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 48px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: normal;
   letter-spacing: 0.2em;
+  padding-left: 48px;
+  width: 50%;
 }
 
 header .container1100 nav {
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 40%;
 }
 
 header .container1100 nav ul {
@@ -425,13 +425,13 @@ header .container1100 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 40px;
   margin: 0;
-  font-family: 'Noto Serif JP', serif;
-  font-weight: normal;
+  padding-right: 40px;
 }
 
 header .container1100 nav ul li {
@@ -446,15 +446,15 @@ header .container1100 nav ul li a {
 }
 
 header .container1100 nav ul li a::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  height: 1px;
   background: #001E38;
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 0%;
 }
 
 header .container1100 nav ul li a:hover::before {
@@ -467,15 +467,17 @@ header .container1100 nav ul li.active a {
 
 footer {
   background-color: #001E38;
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 16px;
-  overflow: hidden;
-  position: relative;
   color: #ffffff;
+  overflow: hidden;
+  padding-bottom: 16px;
+  padding-top: 40px;
+  position: relative;
+  width: 100%;
 }
 
 footer .container1100 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,8 +486,6 @@ footer .container1100 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 footer .container1100 .footer-left {
@@ -493,41 +493,41 @@ footer .container1100 .footer-left {
 }
 
 footer .container1100 .footer-left .footer-logo {
+  font-family: "Noto Serif JP", serif;
   font-size: 40px;
-  padding-bottom: 24px;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 24px;
 }
 
 footer .container1100 .footer-left address p {
-  font-style: normal;
+  font-family: "Noto Serif JP", serif;
   font-size: 16px;
-  line-height: 1.8;
-  font-family: 'Noto Serif JP', serif;
+  font-style: normal;
   font-weight: normal;
+  line-height: 1.8;
   margin: 0;
 }
 
 footer .container1100 .footer-left address p span {
-  font-size: 16px;
   display: block;
+  font-size: 16px;
 }
 
 footer .container1100 .footer-right {
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 40%;
 }
 
 footer .container1100 .footer-right ul {
-  width: 33%;
-  padding: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: normal;
+  padding: 0;
+  width: 33%;
 }
 
 footer .container1100 .footer-right li {
@@ -535,22 +535,22 @@ footer .container1100 .footer-right li {
 }
 
 footer .container1100 .footer-right li a {
-  font-size: 12px;
-  white-space: nowrap;
   color: #ffffff;
+  font-size: 12px;
   position: relative;
+  white-space: nowrap;
 }
 
 footer .container1100 .footer-right li a::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  height: 1px;
   background: #ffffff;
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 0%;
 }
 
 footer .container1100 .footer-right li a:hover::before {
@@ -558,10 +558,10 @@ footer .container1100 .footer-right li a:hover::before {
 }
 
 footer .footer-copyright {
-  width: 100%;
-  text-align: center;
   font-size: 10px;
   padding-top: 44px;
+  text-align: center;
+  width: 100%;
 }
 
 .container1100 {
@@ -579,32 +579,32 @@ footer .footer-copyright {
 }
 
 .intro .img-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .intro .text-container h2 {
-  padding-top: 128px;
+  font-family: "Noto Serif JP", serif;
   font-size: 40px;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
   font-weight: normal;
+  margin: 0;
+  padding-top: 128px;
 }
 
 .intro .text-container p {
-  padding-top: 28px;
-  padding-bottom: 88px;
+  font-family: "Noto Serif JP", serif;
   font-size: 16px;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 88px;
+  padding-top: 28px;
 }
 
 .container1300 {
@@ -618,28 +618,28 @@ footer .footer-copyright {
 }
 
 .container1300 .text-container h3 {
-  padding-top: 100px;
+  font-family: "Noto Serif JP", serif;
   font-size: 80px;
-  padding-bottom: 72px;
-  margin: 0;
-  font-family: 'Noto Serif JP', serif;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 72px;
+  padding-top: 100px;
 }
 
 .container1300 .text-container p {
-  margin: 0 116px;
+  font-family: "Noto Serif JP", serif;
   font-size: 16px;
-  padding-bottom: 48px;
-  font-family: 'Noto Serif JP', serif;
   font-weight: normal;
+  margin: 0 116px;
+  padding-bottom: 48px;
 }
 
 .container1300 .text-container .btn-b {
+  border-bottom: 1px solid #000000;
+  margin: auto 0;
+  overflow: hidden;
   position: relative;
   width: 190px;
-  margin: auto 0;
-  border-bottom: 1px solid #000000;
-  overflow: hidden;
   /* 上のボーダー */
   /*a*/
   margin: 0 auto;
@@ -647,15 +647,15 @@ footer .footer-copyright {
 
 .container1300 .text-container .btn-b:before {
   content: '';
-  position: absolute;
   background: #000000;
   /*線の色*/
+  height: 1px;
+  position: absolute;
   top: 0;
   left: -190px;
-  width: 190px;
-  height: 1px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 190px;
 }
 
 .container1300 .text-container .btn-b:hover:before {
