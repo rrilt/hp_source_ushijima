@@ -1,6 +1,6 @@
 
-@import"color";
-@import"setting";
+@forward"color";
+@forward"setting";
 
 .container800 {
     margin: 0 auto;
@@ -22,12 +22,12 @@
 
 .head-title {
     align-items: center;
-    background-color: $navy;
+    background-color: color.$navy;
     display: flex;
     height: 260px;
     width: 100%;
     h1 {
-        background-color: $white;
+        background-color: color.$white;
         color: $black;
         display: inline-block;
         font-family: "Yu Mincho", "YuMincho", serif;
@@ -59,7 +59,7 @@ a {
 
 
 header {
-    background-color: $white;
+    background-color: color.$white;
     height: 72px;
     left: 0;
     position: fixed;
@@ -100,7 +100,7 @@ header {
                         position: relative;
                     }
                     a::before {
-                        background: $navy;
+                        background: color.$navy;
                         bottom: -2px;
                         content: "";
                         height: 1px;
@@ -123,8 +123,8 @@ header {
 
 
 footer {
-    background-color: $navy;
-    color: $white;
+    background-color: color.$navy;
+    color: color.$white;
     overflow: hidden;
     padding-bottom: 16px;
     padding-top: 40px;
@@ -171,13 +171,13 @@ footer {
             li {
                 line-height: 2.5;
                 a {
-                    color: $white;
+                    color: color.$white;
                     font-size: 12px;
                     position: relative;
                     white-space: nowrap;
                 }
                 a::before {
-                    background: $white;
+                    background: color.$white;
                     bottom: -2px;
                     content: "";
                     height: 1px;

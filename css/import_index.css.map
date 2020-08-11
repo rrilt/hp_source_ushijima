@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,IAAI,CAAJ,SAAI;AACJ,IAAI,CAAJ,QAAI;AACJ,IAAI,CAAJ,OAAI",
+    "sources": [
+        "import_index.scss",
+        "_color.scss"
+    ],
+    "names": [],
+    "file": "import_index.css"
+}
