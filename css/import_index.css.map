@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AACA,IAAI,CAAJ,SAAI;AACJ,IAAI,CAAJ,QAAI;AACJ,IAAI,CAAJ,OAAI",
+    "mappings": "AAAA,IAAI,CAAJ,OAAI;AACJ,IAAI,CAAJ,SAAI;AACJ,IAAI,CAAJ,QAAI;AACJ,IAAI,CAAJ,OAAI;AACJ,IAAI,CAAJ,SAAI;AACJ,IAAI,CAAJ,SAAI;AACJ,IAAI,CAAJ,OAAI;AACJ,IAAI,CAAJ,cAAI;AACJ,IAAI,CAAJ,SAAI",
     "sources": [
-        "import_index.scss",
-        "_color.scss"
+        "../scss/import_index.scss"
     ],
     "names": [],
     "file": "import_index.css"
