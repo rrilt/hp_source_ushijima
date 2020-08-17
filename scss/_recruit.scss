@@ -1,4 +1,4 @@
-@forward "common";
+
 
 .recruit-wrapper .container1100 {
     display: flex;
@@ -16,7 +16,7 @@
         justify-content: start;
         width: 55%;
         h2 {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 40px;
             font-weight: normal;
         }
@@ -55,14 +55,14 @@
             width: 50%;
             h2 {
                 color: $white;
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-weight: normal;
                 padding-top: 80px;
                 position: relative;
             }
             .btn-p {
                 bottom: 20px;
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-weight: normal;
                 position: absolute;
             }

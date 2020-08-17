@@ -7,7 +7,7 @@
     "element-case": "lower",
     "eof-newline": false,
     "leading-zero": true,
-    "quotes": "double",
+    "quotes": "single",
     "sort-order-fallback": "abc",
     "sort-order":[],
     "space-after-colon": " ",

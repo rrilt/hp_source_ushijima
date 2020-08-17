@@ -1,4 +1,4 @@
-@forward "common";
+
 
 .filter {
     padding-bottom: 72px;
@@ -219,7 +219,7 @@ ber {
     .c-pagenation-dir__label {
         border-bottom: 1px solid #E0E0E0;
         display: block;
-        font-family: "ゴシックMB101 M","Gothic MB101 Medium", sans-serif;
+        font-family: 'ゴシックMB101 M','Gothic MB101 Medium', sans-serif;
         font-size: 14px;
         padding: 20px;
         ;
@@ -252,7 +252,7 @@ ber {
 }
 
 .c-pagenation-dir__list li {
-    font-family: "ゴシックMB101 M","Gothic MB101 Medium", sans-serif;
+    font-family: 'ゴシックMB101 M','Gothic MB101 Medium', sans-serif;
     font-size: 14px;
     margin-left: 30px;
     margin-top: 30px;
@@ -297,7 +297,7 @@ ber {
 .c-pagenation-dir__list a.is-current:after, .c-pagenation-dir__list a:hover:after {
     background: $navy;
     bottom: -0px;
-    content: "";
+    content: '';
     display: block;
     height: 1px;
     left: 0;
@@ -376,7 +376,7 @@ a:hover .c-button--white .c-button__text {
 }
 
 .c-arrow-box:after {
-    content: "";
+    content: '';
     display: block;
     left: 50%;
     margin: 0;

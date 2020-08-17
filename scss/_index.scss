@@ -1,4 +1,4 @@
-@forward "common";
+
 
 header {
     display: inline;
@@ -38,7 +38,7 @@ header {
             writing-mode: vertical-rl;
 
             .main-logo {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-size: 60px;
                 font-weight: normal;
                 left: 50%;
@@ -50,7 +50,7 @@ header {
                 white-space: nowrap;
             }
             .sub-logo {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-size: 24px;
                 font-weight: normal;
                 left: 50%;
@@ -68,7 +68,7 @@ header {
             justify-content: center;
 
             ul {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-weight: normal;
                 padding-left: 0px;
 
@@ -83,7 +83,7 @@ header {
                     a::before {
                         background: $navy;
                         bottom: -2px;
-                        content: "";
+                        content: '';
                         height: 1px;
                         left: 0;
                         position: absolute;
@@ -105,7 +105,7 @@ header {
     .container1100 {
         h2 {
             color: $white;
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 24px;
             font-weight: bold;
             margin: 0;
@@ -152,13 +152,13 @@ header {
             width: 50%;
             .title-en {
                 color: $orange;
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-size: 16px;
                 font-weight: normal;
                 margin: 0;
             }
             .title-jp {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-size: 30px;
                 font-weight: bold;
                 margin: 0;
@@ -185,7 +185,7 @@ header {
     .container1300 {
         .title-en {
             color: $orange;
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 16px;
             font-weight: normal;
             margin: 0;
@@ -193,7 +193,7 @@ header {
             text-align: center;
         }
         .title-jp {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 32px;
             font-weight: bold;
             margin: 0;
@@ -222,7 +222,7 @@ header {
                     }
                     .box-title {
                         color: $white;
-                        font-family: "Noto Serif JP", serif;
+                        font-family: 'Noto Serif JP', serif;
                         font-weight: normal;
                         left: 50%;
                         position: absolute;
@@ -287,14 +287,14 @@ header {
         width: 512px;
         .title-en {
             color: $orange;
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 16px;
             font-weight: normal;
             margin: 0 ;
             padding-top: 5px;
         }
         .title-jp {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 32px;
             font-weight: bold;
             margin: 0 ;

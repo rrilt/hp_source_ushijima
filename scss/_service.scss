@@ -1,4 +1,4 @@
-@forward "common";
+
 
 .container1100 {
     display: flex;
@@ -19,14 +19,14 @@
     }
     .text-container {
         h2 {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 40px;
             font-weight: normal;
             margin: 0;
             padding-top: 128px;
         }
         p {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 16px;
             font-weight: normal;
             margin: 0;
@@ -41,7 +41,7 @@
     .text-container {
         text-align: center;
         h3 {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 80px;
             font-weight: normal;
             margin: 0;
@@ -49,7 +49,7 @@
             padding-top: 100px;
         }
         p {
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-size: 16px;
             font-weight: normal;
             margin: 0 116px;
