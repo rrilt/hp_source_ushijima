@@ -20,15 +20,15 @@
 
 .head-title {
     align-items: center;
-    background-color: color.$navy;
+    background-color: $navy;
     display: flex;
     height: 260px;
     width: 100%;
     h1 {
-        background-color: color.$white;
+        background-color: $white;
         color: $black;
         display: inline-block;
-        font-family: "Yu Mincho", "YuMincho", serif;
+        font-family: 'Yu Mincho', 'YuMincho', serif;
         font-size: 20px;
         letter-spacing: 0.2em;
         margin: auto auto auto 64px;
@@ -37,13 +37,13 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', HelveticaNeue, YuGothic, 'Yu Gothic Medium', 'Yu Gothic', Verdana, Meiryo, sans-serif;
     margin: 0;
 }
 
 /* IEだけに適応 */
 _:lang(x)::-ms-backdrop, .selector {
-    font-family: "Segoe UI", Meiryo, sans-serif;
+    font-family: 'Segoe UI', Meiryo, sans-serif;
 }
 
 li {
@@ -57,21 +57,21 @@ a {
 
 
 header {
-    background-color: color.$white;
+    background-color: $white;
     height: 72px;
     left: 0;
+    opacity: 1;
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 100;
-
     .container1100 {
         display: flex;
         justify-content: space-between;
 
         .header-logo {
             align-items: center;
-            font-family: "Noto Serif JP", serif;
+            font-family: 'Noto Serif JP', serif;
             font-weight: normal;
             letter-spacing: 0.2em;
             padding-left: 48px;
@@ -84,7 +84,7 @@ header {
             ul {
                 align-items: center;
                 display: flex;
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-weight: normal;
                 justify-content: flex-end;
                 margin: 0;
@@ -98,9 +98,9 @@ header {
                         position: relative;
                     }
                     a::before {
-                        background: color.$navy;
+                        background: $navy;
                         bottom: -2px;
-                        content: "";
+                        content: '';
                         height: 1px;
                         left: 0;
                         position: absolute;
@@ -121,8 +121,8 @@ header {
 
 
 footer {
-    background-color: color.$navy;
-    color: color.$white;
+    background-color: $navy;
+    color: $white;
     overflow: hidden;
     padding-bottom: 16px;
     padding-top: 40px;
@@ -137,14 +137,14 @@ footer {
         .footer-left {
             width: 50%;
             .footer-logo {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-size: 40px;
                 font-weight: normal;
                 margin: 0;
                 padding-bottom: 24px;
             }
             address p {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: normal;
@@ -161,7 +161,7 @@ footer {
             flex-wrap: wrap;
             width: 40%;
             ul {
-                font-family: "Noto Serif JP", serif;
+                font-family: 'Noto Serif JP', serif;
                 font-weight: normal;
                 padding: 0;
                 width: 33%;
@@ -169,15 +169,15 @@ footer {
             li {
                 line-height: 2.5;
                 a {
-                    color: color.$white;
+                    color: $white;
                     font-size: 12px;
                     position: relative;
                     white-space: nowrap;
                 }
                 a::before {
-                    background: color.$white;
+                    background: $white;
                     bottom: -2px;
-                    content: "";
+                    content: '';
                     height: 1px;
                     left: 0;
                     position: absolute;

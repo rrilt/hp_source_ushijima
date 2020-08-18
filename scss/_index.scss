@@ -1,14 +1,15 @@
 
 
-header {
+.animated {
     display: inline;
     left: 0px;
-    opacity: 0;
+    opacity: 0 ;
     position: fixed;
     right: 0px;
     top: -60px;
     z-index: 999;
 }
+
 
 .view-wrapper {
     height: 100vh;
@@ -103,6 +104,8 @@ header {
     background-color: $navy;
     height: 432px;
     .container1100 {
+        display: flex;
+        flex-direction: column;
         h2 {
             color: $white;
             font-family: 'Noto Serif JP', serif;
@@ -183,6 +186,8 @@ header {
 
 .work-wrapper {
     .container1300 {
+        display: flex;
+        flex-direction: column;
         .title-en {
             color: $orange;
             font-family: 'Noto Serif JP', serif;
