@@ -92,6 +92,5 @@ $(function() {
 
   initSmoothScroll(),
   initInViewItem() ,
-  $(window).resize(initResize),
   $("head").append('<style type="text/css">#container { display: none; }</style>')
 });
