@@ -7,11 +7,7 @@
     "element-case": "lower",
     "eof-newline": false,
     "leading-zero": true,
-<<<<<<< HEAD
-    "quotes": "double",
-=======
     "quotes": "single",
->>>>>>> feature/from0811/from-@import-to-@use
     "sort-order-fallback": "abc",
     "sort-order":[],
     "space-after-colon": " ",
