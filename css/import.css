@@ -405,7 +405,7 @@ header {
   z-index: 100;
 }
 
-header .container1100 {
+header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,7 +414,7 @@ header .container1100 {
           justify-content: space-between;
 }
 
-header .container1100 .header-logo {
+header .header-inner .header-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -425,14 +425,15 @@ header .container1100 .header-logo {
   width: 50%;
 }
 
-header .container1100 nav {
+header .header-inner nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 20px;
   width: 40%;
 }
 
-header .container1100 nav ul {
+header .header-inner nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -448,18 +449,18 @@ header .container1100 nav ul {
   padding-right: 40px;
 }
 
-header .container1100 nav ul li {
+header .header-inner nav ul li {
   padding-left: 12px;
   padding-right: 12px;
   white-space: nowrap;
 }
 
-header .container1100 nav ul li a {
+header .header-inner nav ul li a {
   color: #000000;
   position: relative;
 }
 
-header .container1100 nav ul li a::before {
+header .header-inner nav ul li a::before {
   background: #001E38;
   bottom: -2px;
   content: '';
@@ -471,11 +472,11 @@ header .container1100 nav ul li a::before {
   width: 0%;
 }
 
-header .container1100 nav ul li a:hover::before {
+header .header-inner nav ul li a:hover::before {
   width: 100%;
 }
 
-header .container1100 nav ul li.active a {
+header .header-inner nav ul li.active a {
   border-bottom: 2px solid #008090;
 }
 
