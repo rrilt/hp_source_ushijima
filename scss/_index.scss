@@ -16,24 +16,18 @@
     position: relative;
     width: 100vw;
     .view-swiper {
-        height: 100%;
+        height: 100vh;
         overflow: hidden;
         position: absolute;
-        width: 100%;
         z-index: 0;
         img {
-            height: 100%;
-            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
     }
     .navi-wrapper {
-        background-color: rgba($white, $alpha: 0.9);
-        height: 100%;
-        position: absolute;
-        width: 30%;
-        z-index: 1;
+        z-index: 2;
         .logo-container {
-            height: 50%;
             position: relative;
             width: 100%;
             writing-mode: vertical-rl;
@@ -103,7 +97,7 @@
 .news-wrapper {
     background-color: $navy;
     height: 432px;
-    .container1100 {
+    .container1000 {
         display: flex;
         flex-direction: column;
         h2 {
@@ -125,18 +119,25 @@
                 justify-content: center;
                 padding-bottom: 20px;
                 text-align: center;
-                p {
+                .news-date, .news-title {
                     color: $white;
                     font-size: 16px;
-                    padding-right: 32px;
+                    padding-right: 2rem;
                 }
-                .genre {
+                .news-genre {
                     background-color: $white;
                     border-radius: 4px;
                     color: $black;
                     font-size: 10px;
                     margin-right: 24px;
                     padding: 2px 16px;
+                }
+                .news-title {
+                    padding-bottom: 0;
+                    padding-top: 0;
+                }
+                .news-head {
+                    display: flex;
                 }
             }
         }
@@ -147,27 +148,26 @@
 }
 
 .about-wrapper {
-    height: 532px;
-    .container1100 {
-        display: flex;
+    height: 580px;
+    .container1000 {
+        .title-en {
+            color: $orange;
+            font-family: 'Noto Serif JP', serif;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0;
+        }
+        .title-jp {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: 64px;
+            padding-top: 20px;
+        }
         .about-left {
             padding-top: 92px;
             width: 50%;
-            .title-en {
-                color: $orange;
-                font-family: 'Noto Serif JP', serif;
-                font-size: 16px;
-                font-weight: normal;
-                margin: 0;
-            }
-            .title-jp {
-                font-family: 'Noto Serif JP', serif;
-                font-size: 30px;
-                font-weight: bold;
-                margin: 0;
-                padding-bottom: 64px;
-                padding-top: 20px;
-            }
             p {
                 font-size: 18px;
                 margin: 0;
@@ -185,9 +185,10 @@
 }
 
 .work-wrapper {
-    .container1100 {
+    .work-container {
         display: flex;
         flex-direction: column;
+        margin: 0 1.5rem;
         .title-en {
             color: $orange;
             font-family: 'Noto Serif JP', serif;
@@ -220,7 +221,6 @@
                     position: relative;
                     .image {
                         margin: 0;
-                        min-height: 300px;
                         overflow: hidden;
                         position: relative;
                         text-align: center;
@@ -326,8 +326,18 @@
         overflow: hidden;
         padding: 0;
         position: relative;
+        transform: none;
         width: 100%;
         z-index: -1;
+        .swiper-slide {
+            height: 568px;
+            overflow: hidden;
+            img {
+                height: 568px;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
     }
 }
 
@@ -338,12 +348,12 @@
         margin: 164px auto 60px auto;
         max-width: 100%;
         position: relative;
-        width: 1100px;
+        width: 1000px;
         figure {
             height: 100%;
-            left: -14px;
+            left: 30px;
             position: absolute;
-            top: -84px;
+            top: -30px;
             width: 50%;
             img {
                 height: 100%;
@@ -357,7 +367,7 @@
                 color: $white;
                 font-size: 20px;
                 margin: 0;
-                padding: 64px 116px 56px 116px;
+                padding: 64px 56px 56px 56px;
                 text-align: center;
             }
             .btn-w {

@@ -16,22 +16,27 @@
 
 .card {
     background-color: $white;
+    box-sizing: border-box;
     display: flex;
-    height: 392px;
     justify-content: center;
-    margin: 10px;
-    width: 280px;
+    margin-top: 1rem;
+    padding: 1rem ;
+    width: 24%;
     .card-contents {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
-        width: 260px;
+
         .img-card {
             align-items: center;
             display: flex;
-            height: 270px;
             justify-content: center;
+            img {
+                height: auto;
+                max-width: 100%;
+                width: 100%;
+            }
         }
         .text-card {
             h3 {
