@@ -2215,10 +2215,10 @@ a:hover .c-button--white .c-button__text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 29px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2417,7 +2417,7 @@ a:hover .c-button--white .c-button__text {
 
 @media screen and (max-width: 767px) {
   .view-wrapper {
-    height: 500px !important;
+    height: 500px;
   }
   .view-wrapper .navi-wrapper {
     height: 100%;
@@ -2432,17 +2432,17 @@ a:hover .c-button--white .c-button__text {
   .view-wrapper .navi-wrapper .logo-container .sub-logo {
     background-color: #FFFFFF;
     color: #000000;
-    letter-spacing: 8px !important;
+    letter-spacing: 8px;
   }
   .view-wrapper .navi-wrapper .logo-container .main-logo {
     background-color: #FFFFFF;
     color: #000000;
   }
   .view-wrapper .navi-wrapper .menu-container {
-    display: none !important;
+    display: none;
   }
   .view-wrapper .view-swiper {
-    height: 350px !important;
+    height: 350px;
     top: 0;
   }
   .view-wrapper .background-md {
@@ -2473,19 +2473,19 @@ a:hover .c-button--white .c-button__text {
 
 @media screen and (max-width: 767px) {
   .news-wrapper {
-    height: 640px !important;
+    height: 640px;
   }
   .news-wrapper .news-container {
     margin: 0 auto;
     width: 280px;
   }
   .news-wrapper .news {
-    display: inline-block !important;
-    height: auto !important;
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
-    text-align: right !important;
+    display: inline-block;
+    height: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: right;
   }
   .news-wrapper .news-head {
     padding-bottom: 0.5rem;
@@ -2514,7 +2514,7 @@ a:hover .c-button--white .c-button__text {
   }
   .about-wrapper .about-right {
     height: 260px;
-    width: 100% !important;
+    width: 100%;
   }
   .about-wrapper .about-right figure {
     height: 100%;
@@ -2522,30 +2522,30 @@ a:hover .c-button--white .c-button__text {
   }
   .about-wrapper .about-right img {
     height: 100%;
-    padding: 0 !important;
+    padding: 0;
     width: auto;
   }
   .about-wrapper .about-left {
-    padding: 2rem 0 0 0 !important;
-    text-align: center !important;
-    width: 80% !important;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    width: 80%;
   }
   .about-wrapper .about-left .title-en, .about-wrapper .about-left .title-jp {
     display: none;
   }
   .about-wrapper .about-left p {
-    font-size: 1rem !important;
-    padding-right: 0 !important;
+    font-size: 1rem;
+    padding-right: 0;
   }
   .about-wrapper .about-left .btn-b {
-    margin: 0 auto !important;
+    margin: 0 auto;
   }
   .about-wrapper .about-head-sm {
     text-align: center;
   }
   .about-wrapper .about-head-sm .title-jp {
-    padding-bottom: 2.5rem !important;
-    padding-top: 0.75rem !important;
+    padding-bottom: 2.5rem;
+    padding-top: 0.75rem;
   }
 }
 
@@ -2566,21 +2566,21 @@ a:hover .c-button--white .c-button__text {
 
 @media screen and (max-width: 767px) {
   .work-wrapper .list-panel-items {
-    width: 50% !important;
+    width: 50%;
   }
   .work-wrapper .btn-b {
-    margin: 1rem auto !important;
+    margin: 1rem auto;
   }
 }
 
 @media screen and (max-width: 767px) {
   .recruit-wrapper {
-    position: static !important;
+    position: static;
   }
   .recruit-wrapper .recruit-container {
-    background-color: rgba(255, 255, 255, 0) !important;
-    position: static !important;
-    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0);
+    position: static;
+    width: 100%;
   }
   .recruit-wrapper .recruit-container p, .recruit-wrapper .recruit-container .btn-o {
     display: none;
@@ -2599,19 +2599,19 @@ a:hover .c-button--white .c-button__text {
 
 @media screen and (max-width: 767px) {
   .store-wrapper .store-container {
-    height: 10rem !important;
+    height: 10rem;
   }
   .store-wrapper .store-container figure {
-    right: 0 !important;
-    top: 0 !important;
+    right: 0;
+    top: 0;
   }
   .store-wrapper .store-container figure img {
     height: 100%;
-    width: auto !important;
+    width: auto;
   }
   .store-wrapper .store-container .store-right .store-text {
-    font-size: 0.75rem !important;
-    padding: 1.5rem !important;
+    font-size: 0.75rem;
+    padding: 1.5rem;
   }
 }
 
@@ -2629,7 +2629,7 @@ a:hover .c-button--white .c-button__text {
             flex-direction: column-reverse;
   }
   .intro-container .img-container {
-    margin: 0 auto !important;
+    margin: 0 auto;
     width: 80%;
   }
 }
@@ -2642,11 +2642,11 @@ a:hover .c-button--white .c-button__text {
             flex-direction: column;
   }
   .civil-container .img-container {
-    margin: 0 auto !important;
+    margin: 0 auto;
     width: 80%;
   }
   .civil-container .text-container {
-    margin: 0 auto !important;
+    margin: 0 auto;
     width: 80%;
   }
 }
@@ -2659,11 +2659,11 @@ a:hover .c-button--white .c-button__text {
             flex-direction: column-reverse;
   }
   .antique-container .img-container {
-    margin: 0 auto !important;
+    margin: 0 auto;
     width: 80%;
   }
   .antique-container .text-container {
-    margin: 0 auto !important;
+    margin: 0 auto;
     width: 80%;
   }
 }
@@ -2674,40 +2674,40 @@ a:hover .c-button--white .c-button__text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto !important;
-    width: 80% !important;
+    margin: 0 auto;
+    width: 80%;
   }
   .recruit-message .message-left, .recruit-message .message-right {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 991px) {
   .banner {
-    height: auto !important;
-    width: 80% !important;
+    height: auto;
+    width: 80%;
   }
   .banner h2 {
     font-size: 16px;
-    padding-top: 0px !important;
+    padding-top: 0px;
   }
   .banner .btn-p {
-    bottom: -4rem !important;
+    bottom: -4rem;
   }
 }
 
 @media screen and (max-width: 991px) {
   .banner {
-    height: auto !important;
-    width: 80% !important;
+    height: auto;
+    width: 80%;
   }
   .banner h2 {
     font-size: 16px;
-    padding-top: 0px !important;
+    padding-top: 0px;
   }
   .banner .btn-p {
-    bottom: 3rem !important;
-    left: -1rem !important;
+    bottom: 3rem;
+    left: -1rem;
   }
 }
 /*# sourceMappingURL=import.css.map */

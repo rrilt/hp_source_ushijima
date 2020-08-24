@@ -111,7 +111,7 @@ $breakpoint-down: (
         bottom: 0;
         color: #FFFFFF;
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column ;
         font-size: 29px;
         justify-content: center;
         left: 0;
@@ -300,7 +300,7 @@ $breakpoint-down: (
 //sm用view-wrapper
 @include mq-down(md) {
     .view-wrapper {
-        height: 500px !important;
+        height: 500px ;
         .navi-wrapper {
             height: 100%;
             text-align: center;
@@ -312,7 +312,7 @@ $breakpoint-down: (
                 .sub-logo {
                     background-color: $white;
                     color: $black;
-                    letter-spacing: 8px !important;
+                    letter-spacing: 8px ;
                 }
                 .main-logo {
                     background-color: $white;
@@ -320,11 +320,11 @@ $breakpoint-down: (
                 }
             }
             .menu-container {
-                display: none !important;
+                display: none ;
             }
         }
         .view-swiper {
-            height: 350px !important;
+            height: 350px ;
             top: 0;
         }
         .background-md {
@@ -360,16 +360,16 @@ $breakpoint-down: (
 //sm用news-wrapper
 @include mq-down(md) {
     .news-wrapper {
-        height: 640px !important;
+        height: 640px ;
         .news-container {
             margin: 0 auto;
             width: 280px;
         }
         .news {
-            display: inline-block !important;
-            height: auto !important;
-            justify-content: start !important;
-            text-align: right !important;
+            display: inline-block ;
+            height: auto ;
+            justify-content: start ;
+            text-align: right ;
         }
         .news-head {
             padding-bottom: 0.5rem;
@@ -392,37 +392,37 @@ $breakpoint-down: (
         }
         .about-right {
             height: 260px;
-            width: 100% !important;
+            width: 100% ;
             figure {
                 height: 100%;
                 text-align: center;
             }
             img {
                 height: 100%;
-                padding: 0 !important;
+                padding: 0 ;
                 width: auto;
             }
         }
         .about-left {
-            padding: 2rem 0 0 0 !important;
-            text-align: center !important;
-            width: 80% !important;
+            padding: 2rem 0 0 0 ;
+            text-align: center ;
+            width: 80% ;
             .title-en, .title-jp {
                 display: none;
             }
             p {
-                font-size: 1rem !important;
-                padding-right: 0 !important;
+                font-size: 1rem ;
+                padding-right: 0 ;
             }
             .btn-b {
-                margin: 0 auto !important;
+                margin: 0 auto ;
             }
         }
         .about-head-sm {
             text-align: center;
             .title-jp {
-                padding-bottom: 2.5rem !important;
-                padding-top: 0.75rem !important;
+                padding-bottom: 2.5rem ;
+                padding-top: 0.75rem ;
             }
         }
     }
@@ -446,10 +446,10 @@ $breakpoint-down: (
 @include mq-down(md) {
     .work-wrapper {
         .list-panel-items {
-            width: 50% !important;
+            width: 50% ;
         }
         .btn-b {
-            margin: 1rem auto !important;
+            margin: 1rem auto ;
         }
     }
 }
@@ -462,11 +462,11 @@ $breakpoint-down: (
 
 @include mq-down(md) {
     .recruit-wrapper {
-        position: static !important;
+        position: static ;
         .recruit-container {
-            background-color: rgba(255,255,255,0) !important ;
-            position: static !important;
-            width: 100% !important;
+            background-color: rgba(255,255,255,0)  ;
+            position: static ;
+            width: 100% ;
             p, .btn-o {
                 display: none;
             }
@@ -493,19 +493,19 @@ $breakpoint-down: (
 @include mq-down(md) {
     .store-wrapper {
         .store-container {
-            height: 10rem !important;
+            height: 10rem ;
             figure {
-                right: 0 !important;
-                top: 0 !important;
+                right: 0 ;
+                top: 0 ;
                 img {
                     height: 100%;
-                    width: auto !important;
+                    width: auto ;
                 }
             }
             .store-right {
                 .store-text {
-                    font-size: 0.75rem !important;
-                    padding: 1.5rem !important;
+                    font-size: 0.75rem ;
+                    padding: 1.5rem ;
                 }
             }
         }
@@ -526,7 +526,7 @@ $breakpoint-down: (
     .intro-container {
         flex-direction: column-reverse;
         .img-container {
-            margin: 0 auto !important;
+            margin: 0 auto ;
             width: 80%;
         }
     }
@@ -537,11 +537,11 @@ $breakpoint-down: (
     .civil-container {
         flex-direction: column;
         .img-container {
-            margin: 0 auto !important;
+            margin: 0 auto ;
             width: 80%;
         }
         .text-container {
-            margin: 0 auto !important;
+            margin: 0 auto ;
             width: 80%;
         }
     }
@@ -552,11 +552,11 @@ $breakpoint-down: (
     .antique-container {
         flex-direction: column-reverse;
         .img-container {
-            margin: 0 auto !important;
+            margin: 0 auto ;
             width: 80%;
         }
         .text-container {
-            margin: 0 auto !important;
+            margin: 0 auto ;
             width: 80%;
         }
     }
@@ -567,10 +567,10 @@ $breakpoint-down: (
 @include mq-down(lg) {
     .recruit-message {
         flex-direction: column;
-        margin: 0 auto !important;
-        width: 80% !important;
+        margin: 0 auto ;
+        width: 80% ;
         .message-left, .message-right {
-            width: 100% !important;
+            width: 100% ;
         }
     }
 }
@@ -579,14 +579,14 @@ $breakpoint-down: (
 
 @include mq-down(lg) {
     .banner {
-        height: auto !important;
-        width: 80% !important;
+        height: auto ;
+        width: 80% ;
         h2 {
             font-size: 16px;
-            padding-top: 0px !important;
+            padding-top: 0px ;
         }
         .btn-p {
-            bottom: -4rem !important;
+            bottom: -4rem ;
         }
     }
 }
@@ -595,15 +595,15 @@ $breakpoint-down: (
 
 @include mq-down(lg) {
     .banner {
-        height: auto !important;
-        width: 80% !important;
+        height: auto ;
+        width: 80% ;
         h2 {
             font-size: 16px;
-            padding-top: 0px !important;
+            padding-top: 0px ;
         }
         .btn-p {
-            bottom: 3rem !important;
-            left: -1rem !important;
+            bottom: 3rem ;
+            left: -1rem ;
         }
     }
 }
