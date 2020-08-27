@@ -1,0 +1,23 @@
+.container980 {
+  @include mq-down(lg) {
+    width :700px;
+  }
+
+@include mq-down(md) {
+    width :500px;
+  }
+
+@include mq-down(sm) {
+    width :300px;
+  }
+}
+
+.head-title {
+  h1 {
+    @include mq-down(md) {
+      font-size :2rem;
+      margin :0 auto 2rem;
+      padding :2rem 3.2rem;
+    }
+  }
+}

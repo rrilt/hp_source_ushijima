@@ -1,9 +1,11 @@
 /*メディアクエリmixin*/
 // 変数の定義
 // min-width
-$breakpoint-up: (
-  /* small devices (smartphone landscape, 576px and up)
-  'sm': 'screen and (min-width: 576px)',*/
+$breakpoint-up :(
+  //Extra Small devices (smartphone , 399px and up)
+  'xs': 'screen and (min-width: 400px)',
+   //small devices (smartphone landscape, 576px and up)
+  'sm': 'screen and (min-width: 576px)',
   // Medium devices (tablets, 768px and up)
   'md': 'screen and (min-width: 768px)',
   // Lage devices (Laptop, 992px and up)
@@ -13,120 +15,28 @@ $breakpoint-up: (
 ) !default;
 
 // max-width
-$breakpoint-down: (
-  'sm': 'screen and (max-width: 399px)',
+$breakpoint-down :(
+  'xs': 'screen and (max-width: 399px)',
+  'sm': 'screen and (max-width: 575px)',
   'md': 'screen and (max-width: 767px)',
   'lg': 'screen and (max-width: 991px)',
   'xl': 'screen and (max-width: 1199px)',
 ) !default;
 
 // @mixinの定義
-@mixin mq-up($breakpoint: md) {
+@mixin mq-up($breakpoint :md) {
   @media #{map-get($breakpoint-up, $breakpoint)} {
     @content;
   }
 }
 
-@mixin mq-down($breakpoint: md) {
+@mixin mq-down($breakpoint :md) {
   @media #{map-get($breakpoint-down, $breakpoint)} {
     @content;
   }
 }
 /*メディアクエリmixin終了*/
 
-//sm用worksのcard-wrapper
-@include mq-down(md) {
-  .card-wrapper {
-    .card {
-      width: 49%;
-    }
-  }
-}
 
-//sm用serviceのintro
-@include mq-down(md) {
-  .intro-container {
-    flex-direction: column-reverse;
-    .img-container {
-      margin: 0 auto ;
-      width: 80%;
-    }
-  }
-}
 
-//sm用serviceのcivil
-@include mq-down(md) {
-  .civil-container {
-    flex-direction: column;
-    .img-container {
-      margin: 0 auto ;
-      width: 80%;
-    }
-    .text-container {
-      margin: 0 auto ;
-      width: 80%;
-    }
-  }
-}
-
-//sm用serviceのantique
-@include mq-down(md) {
-  .antique-container {
-    flex-direction: column-reverse;
-    .img-container {
-      margin: 0 auto ;
-      width: 80%;
-    }
-    .text-container {
-      margin: 0 auto ;
-      width: 80%;
-    }
-  }
-}
-
-//sm,md用のrecruitのmessage
-
-@include mq-down(lg) {
-  .recruit-message {
-    flex-direction: column;
-    margin: 0 auto ;
-    width: 80% ;
-    .message-left, .message-right {
-      width: 100% ;
-    }
-  }
-}
-
-//md用のrecruitのbanner
-
-@include mq-down(lg) {
-  .banner {
-    height: auto ;
-    width: 80% ;
-    h2 {
-      font-size: 16px;
-      padding-top: 0px ;
-    }
-    .btn-p {
-      bottom: -4rem ;
-    }
-  }
-}
-
-//sm用のrecruitのbanner
-
-@include mq-down(lg) {
-  .banner {
-    height: auto ;
-    width: 80% ;
-    h2 {
-      font-size: 16px;
-      padding-top: 0px ;
-    }
-    .btn-p {
-      bottom: 3rem ;
-      left: -1rem ;
-    }
-  }
-}
 

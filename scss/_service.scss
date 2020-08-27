@@ -1,116 +1,124 @@
 
 
 .intro-container {
-    display: flex;
+  @include mq-down(md) {
+    flex-direction :column-reverse;
+  }  display :flex;
 }
 
 .text-container {
-    width: 50%;
+  width :50%;
 }
 .img-container {
-    width: 50%;
+  width :50%;
 }
 
 .intro {
-    .img-container {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+  .img-container {
+    @include mq-down(md) {
+      margin :0 auto ;
+      width :80%;
+    }  align-items :center;
+    display :flex;
+    justify-content :center;
+  }
+  .text-container {
+    margin :0 auto;
+    padding :2.4rem;
+    h2 {
+      font-family :'Noto Serif JP', serif;
+      font-size :4rem;
+      font-weight :normal;
+      margin :0;
+      padding-top :12.8rem;
     }
-    .text-container {
-        margin: 0 auto;
-        padding: 24px;
-        h2 {
-            font-family: 'Noto Serif JP', serif;
-            font-size: 40px;
-            font-weight: normal;
-            margin: 0;
-            padding-top: 128px;
-        }
-        p {
-            font-family: 'Noto Serif JP', serif;
-            font-size: 16px;
-            font-weight: normal;
-            margin: 0;
-            padding-bottom: 88px;
-            padding-top: 28px;
-        }
+    p {
+      font-family :'Noto Serif JP', serif;
+      font-size :1.6rem;
+      font-weight :normal;
+      margin :0;
+      padding-bottom :8.8rem;
+      padding-top :2.8rem;
     }
+  }
 }
 
-.civil-container, .antique-container {
-    display: flex;
-    .text-container {
-        height: 100%;
-        text-align: center;
-        h3 {
-            box-sizing: border-box;
-            font-family: 'Noto Serif JP', serif;
-            font-size: 80px;
-            font-weight: normal;
-            height: 45%;
-            margin: auto;
-            padding-bottom: 48px;
-            padding-top: 48px;
-        }
-        p {
-            font-family: 'Noto Serif JP', serif;
-            font-size: 16px;
-            font-weight: normal;
-            margin: auto;
-            padding: 12px;
-            width: 80%;
-        }
-        .btn-b {
-            @include btn(190px,$black);
-            margin: 24px auto 24px auto;
-        }
-
-        .btn-b:before {
-            @include btn-before(190px,$black);
-        }
-        .btn-b:hover:before {
-            left: 0px;
-        }
-
-        .btn-b a {
-            @include btn-a(14px,$black);
-        }
-        .btn-b a:after {
-            @include btn-a-after($black);
-            right: 15px;
-        }
-        .btn-b a:before {
-            @include btn-a-before($black);
-            right: 14px;
-        }
-        .btn-b a:hover:after {
-            right: 5px;
-        }
-        .btn-b a:hover:before {
-            right: 4px;
-        }
+.civil-container , .antique-container {
+  display :flex;
+  .text-container {
+    height :100%;
+    text-align :center;
+    h3 {
+      box-sizing :border-box;
+      font-family :'Noto Serif JP', serif;
+      font-size :8rem;
+      font-weight :normal;
+      height :45%;
+      margin :auto;
+      padding-bottom :4.8rem;
+      padding-top :4.8rem;
     }
+    p {
+      font-family :'Noto Serif JP', serif;
+      font-size :1.6rem;
+      font-weight :normal;
+      margin :auto;
+      padding :1.2rem;
+      width :80%;
+    }
+    .btn-b {
+      @include btn(20rem,$black);
+    }
+  }
 }
 
 .civil {
-    .img-container {
-        margin: auto auto auto 0;
-        figure {
-            max-width: 600px;
-            width: 100%;
-        }
+  .civil-container {
+    @include mq-down(md) {
+      flex-direction :column;
+    }  padding-bottom :2.4rem;
+  }
+  .img-container {
+    @include mq-down(md) {
+      margin :0 auto ;
+      width :80%;
+    }  margin :auto auto auto 0;
+
+    figure {
+      max-width :60rem;
+      width :100%;
     }
+  }
+  .text-container {
+    @include mq-down(md) {
+      margin :0 auto ;
+      width :80%;
+    }
+  }
 }
 
 .antique {
-    .img-container {
-        margin: auto 0 auto auto;
+  .antique-container {
+    @include mq-down(md) {
+      flex-direction :column-reverse;
+    }  padding-bottom :2.4rem;
+  }
+  .img-container {
+    @include mq-down(md) {
+      margin :0 auto ;
+      width :80%;
+    }  margin :auto 0 auto auto;
+  }
+  figure {
+    margin-left :auto;
+    margin-right :0;
+    max-width :60rem;
+    width :100%;
+  }
+  .text-container {
+    @include mq-down(md) {
+      margin :0 auto ;
+      width :80%;
     }
-    figure {
-        margin-left: auto;
-        margin-right: 0;
-        max-width: 600px;
-        width: 100%;
-    }
+  }
 }
