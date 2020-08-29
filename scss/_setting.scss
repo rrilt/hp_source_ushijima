@@ -1,278 +1,262 @@
 
 /*ボタン定義*/
 
-@mixin btn($width,$color) {
-    border-bottom: 1px solid $color;
-    margin: auto 0;
-    overflow: hidden;
-    position: relative;
-    width: $width;
-    /* 上のボーダー */
-    /*a*/
-}
-
-@mixin btn-before($width,$color) {
-    background: $color;
-    content: '';
-
-/*線の色*/
-    height: 1px;
-    left: -$width;
-    position: absolute;
-    top: 0;
-    transition: 0.3s;
-    width: $width;
-}
-
-.btn:hover:before {
-    left: 0px;
-}
-
 @mixin btn-a($size,$color) {
-    color: $color;
-    display: block;
-    font-family: 'Noto Serif JP', serif;
-    font-size: $size;
-    font-weight: normal;
-    line-height: 3em;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
+  color :$color;
+  display :block;
+  font-family :'Noto Serif JP', serif;
+  font-size :$size;
+  font-weight :normal;
+  line-height :3em;
+  position :relative;
+  text-align :center;
+  text-decoration :none;
 }
 
 @mixin btn-a-after($color) {
-    border-bottom: 1px solid $color;
-    bottom: 20px;
-    content: '';
-    display: block;
-    height: 1px;
-    position: absolute;
-    right: 25px;
-    transition: 0.3s;
-    width: 12px;
+  border-bottom :0.1rem solid $color;
+  bottom :2rem;
+  content :'';
+  display :block;
+  height :0.1rem;
+  position :absolute;
+  right :2.5rem;
+  transition :0.3s;
+  width :1.2rem;
 }
 
 @mixin btn-a-before($color) {
-    border-bottom: 1px solid $color;
-    bottom: 21px;
-    content: '';
-    display: block;
-    height: 1px;
-    position: absolute;
-    right: 24px;
-    transform: rotate(30deg);
-    transition: 0.3s;
-    width: 6px;
+  border-bottom :0.1rem solid $color;
+  bottom :2.1rem;
+  content :'';
+  display :block;
+  height :0.1rem;
+  position :absolute;
+  right :2.4rem;
+  transform :rotate(30deg);
+  transition :0.3s;
+  width :0.6rem;
 }
 
 .btn a:hover:after {
-    right: 15px;
+  right :1.5rem;
 }
 .btn a:hover:before {
-    right: 14px;
+  right :1.4rem;
 }
 
 /* ボタン定義終わり*/
 
-/*ボタン白*/
+/*ボタン定義2*/
+
+@mixin btn($width,$color) {
+  @include mq-up(md) {
+    border :none;
+    border-bottom :0.1rem solid $color;
+    font-size :1.6rem;
+    margin-top :3.2rem;
+    max-width :$width;
+    transition :0.3s all;
+    width :60%;
+
+    &::before {
+      background :$color;
+      content :'';
+      height :0.1rem;
+      left :-27.4rem;
+      position :absolute;
+      top :0;
+      -webkit-transition :0.3s;
+              transition :0.3s;
+      width :100%;
+    }
+
+    &:hover {
+      &::before {
+        background :$color;
+        left :0;
+      }
+
+      span {
+        margin-left :1.6rem;
+      }
+    }
+  }  border :0.1rem solid $color;
+  color :$color;
+  display :block;
+  font-size :1.2rem;
+  margin :1.6rem auto 0;
+  overflow :hidden;
+  padding :1.2rem 0;
+  position :relative;
+  text-align :center;
+  width :80%;
+
+  span {
+    margin-left :0.8rem;
+    transition :0.3s all;
+  }
+}
+/*ボタン定義2終わり*/
+
+/*ボタン白2*/
+
 .btn-w {
-    @include btn(170px,$white);
+  @include btn(20rem,$white);
 }
 
-.btn-w:before {
-    @include btn-before(170px,$white);
-}
-.btn-w:hover:before {
-    left: 0px;
-}
+/*ボタン白2終わり*/
 
-.btn-w a {
-    @include btn-a(14px,$white);
-}
-.btn-w a:after {
-    @include btn-a-after($white);
-}
-.btn-w a:before {
-    @include btn-a-before($white);
-}
-.btn-w a:hover:after {
-    right: 15px;
-}
-.btn-w a:hover:before {
-    right: 14px;
-}
-/*ボタン白終わり*/
+/*ボタン黒2*/
 
-/*ボタン黒*/
 .btn-b {
-    @include btn(170px,$black);
+  @include btn(20rem,$black);
 }
 
-.btn-b:before {
-    @include btn-before(170px,$black);
-}
-.btn-b:hover:before {
-    left: 0px;
-}
+/*ボタン黒2終わり*/
 
-.btn-b a {
-    @include btn-a(14px,$black);
-}
-.btn-b a:after {
-    @include btn-a-after($black);
-}
-.btn-b a:before {
-    @include btn-a-before($black);
-}
-.btn-b a:hover:after {
-    right: 15px;
-}
-.btn-b a:hover:before {
-    right: 14px;
-}
-/*ボタン黒終わり*/
 
 /*ボタンオレンジ*/
 
 .btn-o a {
-    background: $orange;
-    color: #FFFFFF;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    height: 55px;
-    line-height: 55px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    width: 280px;
+  background :$orange;
+  color :#FFFFFF;
+  display :block;
+  font-size :1.6rem;
+  font-weight :bold;
+  height :55px;
+  line-height :55px;
+  overflow :hidden;
+  position :relative;
+  text-align :center;
+  text-decoration :none;
+  width :280px;
 }
 
-@media only screen and (max-width: 768px) {
-    .btn-o a {
-        font-size: 4vw;
-        margin: 0 auto;
-        width: 90%;
-    }
+@include mq-down(md) {
+  .btn-o a {
+    font-size :4vw;
+    margin :0 auto;
+    width :90%;
+  }
 }
 
 .btn-o a:after {
-    border-bottom: 1px solid lighten($color: $orange, $amount: 20);
-    content: '';
-    display: block;
-    height: 10px;
-    position: absolute;
-    right: 0;
-    top: 18px;
-    transition: 0.3s;
-    width: 30px;
+  border-bottom :1px solid lighten($color :$orange, $amount :20);
+  content :'';
+  display :block;
+  height :10px;
+  position :absolute;
+  right :0;
+  top :18px;
+  transition :0.3s;
+  width :30px;
 }
 
 .btn-o a:before {
-    background: darken($color: $orange, $amount: 20);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-    width: 100%;
+  background :darken($color :$orange, $amount :20);
+  content :'';
+  height :100%;
+  left :0;
+  position :absolute;
+  top :0;
+  transform :scaleX(0);
+  transform-origin :right;
+  transition :transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  width :100%;
 }
 
 .btn-o a:hover:after {
-    width: 20px;
+  width :20px;
 }
 
 .btn-o a:hover:before {
-    transform: scaleX(1);
-    transform-origin: left;
+  transform :scaleX(1);
+  transform-origin :left;
 }
 
 .btn-o a .inner-text {
-    display: block;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 3;
+  display :block;
+  left :0;
+  position :relative;
+  top :0;
+  width :100%;
+  z-index :3;
 }
 
 /*ボタンオレンジ終わり*/
 
 /*ボタンポップ*/
 .btn-p a {
-    background-color: #FFFFFF;
-    bottom: 80px;
-    color: #000000;
-    display: block;
-    font-size: 14px;
-    left: -85px;
-    line-height: 3.5em;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.5s;
-    width: 170px;
-    z-index: 2;
+  background-color :#FFFFFF;
+  bottom :8rem;
+  color :#000000;
+  display :block;
+  font-size :1.4rem;
+  left :-8.5rem;
+  line-height :3.5em;
+  position :absolute;
+  text-align :center;
+  text-decoration :none;
+  transition :0.5s;
+  width :17rem;
+  z-index :2;
 
-    /*&:hover*/
+  /*&:hover*/
 }
 
-@media only screen and (max-width: 768px) {
-    .btn-p a {
-        bottom: -22px;
-        left: 0;
-        margin: 0 auto;
-        right: 0;
-    }
+@media only screen and (max-width: 76.8rem) {
+  .btn-p a {
+    bottom :-2.2rem;
+    left :0;
+    margin :0 auto;
+    right :0;
+  }
 }
 
 .btn-p a:after {
-    border-bottom: 1px solid #AAAAAA;
-    bottom: 24px;
-    content: '';
-    display: block;
-    height: 1px;
-    position: absolute;
-    right: 25px;
-    transition: 0.5s;
-    width: 12px;
+  border-bottom :0.1rem solid #AAAAAA;
+  bottom :2.4rem;
+  content :'';
+  display :block;
+  height :0.1rem;
+  position :absolute;
+  right :2.5rem;
+  transition :0.5s;
+  width :1.2rem;
 }
 
 .btn-p a:before {
-    border-bottom: 1px solid #AAAAAA;
-    bottom: 25px;
-    content: '';
-    display: block;
-    height: 1px;
-    position: absolute;
-    right: 24px;
-    transform: rotate(30deg);
-    transition: 0.5s;
-    width: 6px;
+  border-bottom :0.1rem solid #AAAAAA;
+  bottom :2.5rem;
+  content :'';
+  display :block;
+  height :0.1rem;
+  position :absolute;
+  right :2.4rem;
+  transform :rotate(30deg);
+  transition :0.5s;
+  width :0.6rem;
 }
 
 .btn-p a:hover {
-    bottom: 90px;
-    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.2);
+  bottom :9rem;
+  box-shadow :0rem 3rem 4rem rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 768px) {
-    btn-p a:hover {
-        bottom: -20px;
-        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0);
-    }
+@media only screen and (max-width: 76.8rem) {
+  btn-p a:hover {
+    bottom :-2rem;
+    box-shadow :0rem 3rem 4rem rgba(0, 0, 0, 0);
+  }
 }
 
 .btn-p a:hover:after {
-    right: 18px;
+  right :1.8rem;
 }
 
 .btn-p a:hover:before {
-    right: 17px;
+  right :1.7rem;
 }
 
 /*ボタンポップ終わり*/

@@ -25,34 +25,73 @@ var mySwiper = new Swiper ('.recruit-swiper', {
 
 
 
-$(function () {
-	"use strict";
-	var flag = "view";
 
-  $(window).on("scroll", function () {
-    // scrollTop()が「200」より大きい場合
-   //画面トップから、ナビゲーションメニューまでの高さ（ピクセル）を指定すれば、メニュースクロールで
-   //消えていくタイミングでヘッダが表示されて固定される。  
-    
-    if ($(this).scrollTop() > 1200) {
-      if (flag === "view") {
-        $(".animated").stop().css({opacity: '1.0'}).animate({
-   //”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
-          top: 0
-        }, 500);
 
-        flag = "hide";
-      }
-    } else {
-      if (flag === "hide") {
-        $(".animated").stop().animate({top:"-66px",opacity: 0}, 500);
-		//上にあがり切ったら透過度を0%にして背景が生きるように
-        　　　　//”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
-        flag = "view";
-      }
-    }
-  });
-});
+function switchByWidth(){
+  if (window.matchMedia('(max-width: 767px)').matches) {
+      //スマホ処理
+      $(function () {
+        "use strict";
+        var flag = "view";
+        $(window).on("scroll", function () {
+          // scrollTop()が「200」より大きい場合
+         //画面トップから、ナビゲーションメニューまでの高さ（ピクセル）を指定すれば、メニュースクロールで
+         //消えていくタイミングでヘッダが表示されて固定される。  
+          
+          if ($(this).scrollTop() > 1) {
+            if (flag === "view") {
+              $(".animated").stop().css({opacity: '1.0'}).animate({
+         //”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+                top: 0
+              }, 500);
+      
+              flag = "hide";
+            }
+          } else {
+            if (flag === "hide") {
+              $(".animated").stop().animate({top:"-66px",opacity: 0}, 500);
+          //上にあがり切ったら透過度を0%にして背景が生きるように
+              　　　　//”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+              flag = "view";
+            }
+          }
+        });
+      });
+  } else if (window.matchMedia('(min-width:768px)').matches) {
+      //PC処理
+      $(function () {
+        "use strict";
+        var flag = "view";
+        $(window).on("scroll", function () {
+          // scrollTop()が「200」より大きい場合
+         //画面トップから、ナビゲーションメニューまでの高さ（ピクセル）を指定すれば、メニュースクロールで
+         //消えていくタイミングでヘッダが表示されて固定される。  
+          
+          if ($(this).scrollTop() > 1200) {
+            if (flag === "view") {
+              $(".animated").stop().css({opacity: '1.0'}).animate({
+         //”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+                top: 0
+              }, 500);
+      
+              flag = "hide";
+            }
+          } else {
+            if (flag === "hide") {
+              $(".animated").stop().animate({top:"-66px",opacity: 0}, 500);
+          //上にあがり切ったら透過度を0%にして背景が生きるように
+              　　　　//”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+              flag = "view";
+            }
+          }
+        });
+      });
+  }
+}
+
+//ロードとリサイズの両方で同じ処理を付与する
+window.onload = switchByWidth;
+window.onresize = switchByWidth;
 
 
 function initSmoothScroll() {

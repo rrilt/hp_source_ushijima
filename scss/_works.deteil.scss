@@ -1,104 +1,115 @@
 .container800 {
-    display: flex;
-    flex-direction: column;
-    h1 {
-        font-family: 'Noto Serif JP', serif;
-        font-size: 32px;
-        font-weight: normal;
-        margin: 0;
-        padding-top: 40px;
+  display :flex;
+  flex-direction :column;
+  h1 {
+    font-family :'Noto Serif JP', serif;
+    font-size :3.2rem;
+    font-weight :normal;
+    margin :0;
+    padding-top :4rem;
+  }
+  .list-container {
+    margin :0;
+    padding-bottom :3.2rem;
+    padding-top :4.4rem;
+    .row {
+      border-bottom :0.1rem solid $black;
+      color :$black;
+      display :flex;
+      font-size :1.2rem;
+      padding :1.6rem 0;
+      h3 {
+        display :block;
+        font-size :1.2rem;
+        margin :0;
+        width :12rem;
+      }
+      p {
+        font-weight :500;
+        letter-spacing :0.05em;
+        margin :0;
+      }
     }
-    .list-container {
-        margin: 0;
-        padding-bottom: 32px;
-        padding-top: 44px;
-        .row {
-            border-bottom: 1px solid $black;
-            color: $black;
-            display: flex;
-            font-size: 12px;
-            padding: 16px 0;
-            h3 {
-                display: block;
-                font-size: 12px;
-                margin: 0;
-                width: 120px;
-            }
-            p {
-                font-weight: 500;
-                letter-spacing: 0.05em;
-                margin: 0;
-            }
-        }
+  }
+  .btn-b {
+    margin :0 auto;
+    p {
+      margin :0 auto;
     }
-    .btn-b {
-        margin: 0 auto;
-        p {
-            margin: 0 auto;
-        }
-    }
+  }
 }
 
 .works-title {
-    padding-bottom: 12px;
-    padding-top: 80px;
-    p {
-        background-color: lighten($color: $gray, $amount: 40);
-        color: $black;
-        display: inline-block;
-        line-height: 1;
-        margin: 0;
-        padding: 5px;
-    }
+  padding :8rem 2.4rem 2rem 2.4rem;
+  p {
+    background-color :lighten($color :$gray, $amount :40);
+    color :$black;
+    display :inline-block;
+    line-height :1;
+    margin :0;
+    padding :0.5rem;
+  }
 }
 
 
 .caption-wrapper {
-    margin-top: 48px;
-    padding-bottom: 64px;
-    padding-top: 40px;
+@include mq-down(md) {
+    margin-top :0;
+  }
 
-    h2 {
-        display: inline-block;
-        font-size: 48px;
-        text-align: center;
-    }
+  margin-top :4.8rem;
+  padding-bottom :6.4rem;
+  padding-top :4rem;
+  h2 {
+    display :inline-block;
+    font-size :4.8rem;
+    text-align :center;
+  }
 }
 
 .carousele-wrapper {
-    height: 1000px;
+  @include mq-down(md) {
+    height :80rem;
+  }
+
+@include mq-down(sm) {
+    height :50rem;
+  }
+
+@include mq-down(xs) {
+    height :30rem;
+  }  height :100rem;
 }
 
 .swiper-container {
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  margin-left :auto;
+  margin-right :auto;
+  width :100%;
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
+.deteil-swiper-slide {
+  background-position :center;
+  background-size :cover;
 }
 
 .gallery-top {
-    height: 80%;
-    width: 100%;
+  height :80%;
+  width :100%;
 }
 
 .gallery-thumbs {
-    box-sizing: border-box;
-    height: 20%;
-    padding: 10px 0;
+  box-sizing :border-box;
+  height :20%;
+  padding :1rem 0;
 }
 
 .gallery-thumbs .swiper-slide {
-    height: 100%;
-    opacity: 0.4;
-    width: 25%;
+  height :100%;
+  opacity :0.4;
+  width :25%;
 }
 
 .gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
+  opacity :1;
 }
 

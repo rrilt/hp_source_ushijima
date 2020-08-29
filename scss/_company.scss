@@ -1,87 +1,94 @@
 
 
 .head-title {
-    align-items: center;
-    background-color: $navy;
-    display: flex;
-    height: 260px;
-    width: 100%;
-    h1 {
-        background-color: $white;
-        color: $black;
-        display: inline-block;
-        font-size: 20px;
-        margin: auto auto auto 64px;
-        padding: 24px 56px;
-    }
+  align-items :center;
+  background-color :$navy;
+  display :flex;
+  height :26rem;
+  width :100%;
+  h1 {
+    background-color :$white;
+    color :$black;
+    display :inline-block;
+    font-size :2rem;
+    margin :auto auto auto 6.4rem;
+    padding :2.4rem 5.6rem;
+  }
 }
 
 .message {
-    width: 100%;
-    .container800 {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Noto Serif JP', serif;
-        font-weight: normal;
-        justify-content: center;
-        .ceo-view {
-            margin: 0;
-            padding-top: 112px;
-        }
-        .ceo-text {
-            font-size: 16px;
-            margin: 0;
-            padding-bottom: 72px;
-            padding-top: 60px;
-        }
-        .ceo-name {
-            font-size: 16px;
-            margin: 0 0 0 auto;
-            padding-bottom: 120px;
-        }
+  width :100%;
+  .container800 {
+    align-items :center;
+    display :flex;
+    flex-direction :column;
+    font-family :'Noto Serif JP', serif;
+    font-weight :normal;
+    justify-content :center;
+    .ceo-view {
+      margin :0;
+      padding-top :11.2rem;
     }
+    .ceo-text {
+      font-size :1.6rem;
+      margin :0;
+      padding-bottom :7.2rem;
+      padding-top :6rem;
+    }
+    .ceo-name {
+      font-size :1.6rem;
+      margin :0 0 0 auto;
+      padding-bottom :12rem;
+    }
+  }
 }
 
 .profile {
-    width: 100%;
+  width :100%;
 }
 
 .history {
-    width: 100%;
+  width :100%;
 }
 
 .container800 {
-    display: flex;
-    flex-direction: column;
-    h1 {
-        font-family: 'Noto Serif JP', serif;
-        font-size: 32px;
-        font-weight: normal;
-        margin: 0;
-        padding-top: 40px;
+  display :flex;
+  flex-direction :column;
+  iframe {
+    @include mq-down(sm) {
+      width :25rem;
+    }  height :240 px;
+    width :42rem;
+  }
+  h1 {
+    font-family :'Noto Serif JP', serif;
+    font-size :3.2rem;
+    font-weight :normal;
+    margin :0;
+    padding-top :4rem;
+  }
+  .list-container {
+    margin :0;
+    padding-bottom :3.2rem;
+    padding-top :4.4rem;
+    .row {
+      border-bottom :0.1rem solid $black;
+      color :$black;
+      display :flex;
+      font-size :1.2rem;
+      padding :1.6rem 0;
+      h3 {
+        display :block;
+        font-size :1.2rem;
+        margin :0;
+        width :20%;
+      }
+      p {
+        font-weight :500;
+        letter-spacing :0.05em;
+        margin :0;
+        width :80%;
+      }
     }
-    .list-container {
-        margin: 0;
-        padding-bottom: 32px;
-        padding-top: 44px;
-        .row {
-            border-bottom: 1px solid $black;
-            color: $black;
-            display: flex;
-            font-size: 12px;
-            padding: 16px 0;
-            h3 {
-                display: block;
-                font-size: 12px;
-                margin: 0;
-                width: 120px;
-            }
-            p {
-                font-weight: 500;
-                letter-spacing: 0.05em;
-                margin: 0;
-            }
-        }
-    }
+  }
 }
