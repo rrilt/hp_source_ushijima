@@ -1,0 +1,648 @@
+
+
+.animated {
+  display :inline;
+  left :0rem;
+  opacity :0 ;
+  position :fixed;
+  right :0rem;
+  top :-6rem;
+  z-index :999;
+}
+
+
+.view-wrapper {
+  @include mq-down(md) {
+    height :50rem;
+  }  height :100vh;
+  position :relative;
+  width :100vw;
+
+  .view-swiper {
+    @include mq-down(md) {
+      height :35rem ;
+      top :0;
+    }  height :100vh;
+    overflow :hidden;
+    position :absolute;
+    z-index :0;
+
+    img {
+      @include mq-down(md) {
+        height :35rem;
+        object-position :50% 50%;
+      }  height :100vh;
+      object-fit :cover;
+      object-position :50% 50%;
+      overflow :hidden;
+    }
+  }
+  .navi-wrapper {
+    @include mq-up(md) {
+      background-color :rgba($white, $alpha :0.9);
+      height :100vh;
+      position :absolute;
+      width :40rem;
+    }
+
+@include mq-down(md) {
+      height :100%;
+      text-align :center;
+      top :0;
+    }  z-index :2;
+
+    .logo-container {
+      @include mq-up(md) {
+        height :50%;
+      }
+
+@include mq-down(md) {
+        height :70%;
+        top :10rem;
+        z-index :100;
+      }  position :relative;
+      width :100%;
+      writing-mode :vertical-rl;
+
+      .main-logo {
+        @include mq-down(md) {
+          background-color :$white;
+          color :$black;
+        }  font-family :'Noto Serif JP', serif;
+        font-size :6rem;
+        font-weight :normal;
+        left :50%;
+        letter-spacing :1.6rem;
+        margin :0;
+        position :absolute;
+        top :70%;
+        transform :translateY(-50%) translateX(-50%);
+        white-space :nowrap;
+      }
+      .sub-logo {
+        @include mq-down(md) {
+          background-color :$white;
+          color :$black;
+          letter-spacing :0.8rem ;
+        }  font-family :'Noto Serif JP', serif;
+        font-size :2.4rem;
+        font-weight :normal;
+        left :50%;
+        letter-spacing :1rem;
+        margin :0;
+        position :absolute;
+        top :50%;
+        transform :translateY(-50%) translateX(150%);
+      }
+    }
+    .menu-container {
+      @include mq-down(md) {
+        display :none;
+      }  align-items :center;
+      display :flex;
+      height :50%;
+      justify-content :center;
+
+      ul {
+        font-family :'Noto Serif JP', serif;
+        font-weight :normal;
+        padding-left :0rem;
+
+        li {
+          padding-bottom :1.2rem;
+          padding-top :1.2rem;
+          text-align :center;
+          a {
+            color :$black;
+            position :relative;
+          }
+          a::before {
+            background :$navy;
+            bottom :-0.2rem;
+            content :'';
+            height :0.1rem;
+            left :0;
+            position :absolute;
+            transition :all 0.3s ease;
+            width :0%;
+          }
+          a:hover::before {
+            width :100%;
+          }
+        }
+      }
+    }
+  }
+  .background-md {
+    @include mq-up(md) {
+      display :none;
+    }
+
+@include mq-down(md) {
+      background-color :$navy;
+      display :block;
+      height :15.5rem;
+      position :absolute;
+      top :34.9rem;
+      width :100%;
+      z-index :1;
+    }
+  }
+}
+
+.news-wrapper {
+  @include mq-down(md) {
+  }  background-color :$navy;
+  padding-bottom :4rem;
+
+  .container980 {
+    display :flex;
+    flex-direction :column;
+    h2 {
+      color :$white;
+      font-family :'Noto Serif JP', serif;
+      font-size :2.4rem;
+      font-weight :bold;
+      margin :0;
+      padding-top :6.4rem;
+      text-align :center;
+    }
+    .news-container {
+      @include mq-down(md) {
+        margin :0 auto;
+        width :28rem;
+      }  padding-bottom :1rem;
+      padding-top :5.6rem;
+
+      .news {
+        @include mq-down(md) {
+          display :inline-block ;
+          height :auto ;
+          justify-content :start ;
+          text-align :right ;
+        }  align-items :center;
+        display :flex;
+        height :1.6rem;
+        justify-content :center;
+        padding-bottom :2rem;
+        text-align :center;
+
+        .news-date , .news-title {
+          color :$white;
+          font-size :1.6rem;
+          padding-right :20px;
+        }
+        .news-genre {
+          background-color :$white;
+          border-radius :0.4rem;
+          color :$black;
+          font-size :1rem;
+          margin-right :2.4rem;
+          padding :0.2rem 1.6rem;
+        }
+        .news-title {
+          @include mq-down(md) {
+            padding-left :0;
+            width :100%;
+          }  padding-bottom :0;
+          padding-top :0;
+        }
+        .news-head {
+          @include mq-down(md) {
+            padding-bottom :5px;
+          }  display :flex;
+        }
+      }
+    }
+    .btn-w2 {
+      margin :0 auto;
+    }
+  }
+}
+
+.about-wrapper {
+  @include mq-down(md) {
+    padding-bottom :3.2rem;
+  }  padding-bottom :2.4rem;
+
+  .container980 {
+    @include mq-down(md) {
+      align-items :center;
+      display :flex;
+      flex-direction :column;
+    }
+
+@include mq-up(md) {
+      display :flex;
+      flex-direction :row-reverse;
+    }
+
+    .about-head-sm {
+      @include mq-down(md) {
+        text-align :center;
+      }
+
+@include mq-up(md) {
+        display :none;
+      }
+
+      .title-jp {
+        @include mq-down(md) {
+          padding-bottom :25px ;
+          padding-top :7.5px ;
+        }
+      }
+      .title-en {
+        @include mq-down(md) {
+          padding-bottom :5px ;
+          padding-top :7.5px ;
+        }
+      }
+    }
+    .title-en {
+      color :$orange;
+      font-family :'Noto Serif JP', serif;
+      font-size :1.6rem;
+      font-weight :normal;
+      margin :0;
+    }
+    .title-jp {
+      font-family :'Noto Serif JP', serif;
+      font-size :3rem;
+      font-weight :bold;
+      margin :0;
+      padding-bottom :6.4rem;
+      padding-top :2rem;
+    }
+    .about-left {
+      @include mq-down(md) {
+        padding :20px 0 0 0 ;
+        text-align :center ;
+        width :80% ;
+      }  padding-top :9.2rem;
+      width :50%;
+      .title-en , .title-jp {
+        @include mq-down(md) {
+          display :none;
+        }
+      }
+      p {
+        @include mq-down(md) {
+          font-size :12px ;
+          padding-right :0 ;
+        }  font-size :1.8rem;
+        margin :0;
+        padding-bottom :1.2rem;
+        padding-right :9.6rem;
+      }
+      .btn-b {
+        @include mq-down(md) {
+          margin :0 auto ;
+        }
+      }
+    }
+    .about-right {
+      @include mq-down(md) {
+        align-items :center;
+        display :flex;
+        flex-direction :column;
+        width :100% ;
+      }  width :50%;
+      figure {
+        @include mq-down(md) {
+          text-align :center;
+          width :80%;
+        }
+      }
+      img {
+        @include mq-down(md) {
+          height :auto;
+          padding :0 ;
+          width :80%;
+        }  padding-top :16rem;
+      }
+    }
+  }
+}
+
+.work-wrapper {
+  .work-container {
+    display :flex;
+    flex-direction :column;
+    margin :0 15px;
+    .title-en {
+      color :$orange;
+      font-family :'Noto Serif JP', serif;
+      font-size :1.6rem;
+      font-weight :normal;
+      margin :0;
+      padding-top :2rem;
+      text-align :center;
+    }
+    .title-jp {
+      font-family :'Noto Serif JP', serif;
+      font-size :3.2rem;
+      font-weight :bold;
+      margin :0;
+      padding-bottom :5.4rem;
+      padding-top :2rem;
+      text-align :center;
+    }
+    .list-panel {
+      display :flex;
+      flex-wrap :wrap;
+      overflow :hidden;
+      .list-panel-items {
+        @include mq-down(md) {
+          width :50% ;
+        }  box-sizing :border-box;
+        padding :0 auto;
+        width :33.33%;
+
+        .panel {
+          display :block;
+          overflow :hidden;
+          position :relative;
+          .image {
+            margin :0;
+            overflow :hidden;
+            position :relative;
+            text-align :center;
+          }
+          .box-title {
+            color :$white;
+            font-family :'Noto Serif JP', serif;
+            font-weight :normal;
+            left :50%;
+            position :absolute;
+            text-align :center;
+            top :50%;
+            transform :translate(-50%, -50%);
+            width :100%;
+            .box-en {
+              @include mq-down(md) {
+                font-size :1rem;
+              }  font-size :1.4rem;
+              margin :0;
+            }
+            .box-jp {
+              @include mq-down(md) {
+                font-size :2.4rem;
+              }
+
+@include mq-down(sm) {
+                font-size :2rem;
+              }  font-size :3.2rem;
+              margin :0;
+            }
+          }
+          .box-text {
+            bottom :-3.5rem;
+            color :#FFFFFF;
+            font-size :1.2rem;
+            left :0;
+            min-height :12rem;
+            opacity :0;
+            padding :3rem;
+            position :absolute;
+            right :0;
+            transition :opacity 0.2s ease, bottom 0.2s ease;
+            word-break :break-all;
+          }
+          &:hover {
+            .box-title {
+              margin-top :-3.5rem;
+              &::after {
+                display :block;
+              }
+            }
+
+            .box-text {
+              bottom :0;
+              opacity :1;
+            }
+          }
+        }
+      }
+    }
+    .btn-b {
+      @include mq-down(md) {
+        margin :10px auto ;
+      }  margin :1.2rem 14rem 5.6rem auto;
+    }
+  }
+}
+
+.recruit-wrapper {
+  @include mq-down(md) {
+    position :static ;
+  }  position :relative;
+  .recruit-container {
+    @include mq-down(md) {
+      background-color :rgba(255,255,255,0)  ;
+      position :static ;
+      width :100% ;
+    }  background :#FFFFFF;
+    height :100%;
+    left :0;
+    margin :auto;
+    position :absolute;
+    right :0;
+    text-align :center;
+    width :51.2rem;
+
+    .title-en {
+      color :$orange;
+      font-family :'Noto Serif JP', serif;
+      font-size :1.6rem;
+      font-weight :normal;
+      margin :0 ;
+      padding-top :0.5rem;
+    }
+    .title-jp {
+      @include mq-down(lg) {
+        padding-bottom :30px;
+      }  font-family :'Noto Serif JP', serif;
+      font-size :3.2rem;
+      font-weight :bold;
+      margin :0 ;
+      padding-bottom :8rem;
+      padding-top :2rem;
+    }
+    p {
+      @include mq-up(xl) {
+        margin :0 10rem;
+      }
+
+@include mq-down(md) {
+        display :none;
+      }
+
+@include mq-down(lg) {
+        font-size :1.6rem;
+        margin :0 5rem;
+      } font-size :2rem;
+      margin :0 8rem 0 8rem;
+    }
+    .btn-o {
+      @include mq-down(md) {
+        display :none;
+      }
+      a {
+        left :0;
+        margin :10px auto;
+        position :absolute;
+        right :0;
+      }
+    }
+  }
+  .recruit-swiper {
+    list-style :none;
+    margin-left :auto;
+    margin-right :auto;
+    overflow :hidden;
+    padding :0;
+    position :relative;
+    transform :none;
+    width :100%;
+    z-index :-1;
+    .swiper-slide {
+      overflow :hidden;
+      position :relative;
+      img {
+        bottom :0;
+        left :0;
+        margin :auto;
+        object-fit :cover;
+        object-position :50% 50%;
+        position :absolute;
+        right :0;
+        top :0;
+        width :100%;
+      }
+    }
+    .swiper-slide:before {
+      content :'';
+      display :block;
+      padding-top :100%;
+    }
+  }
+  .recruit-body-sm {
+    @include mq-down(md) {
+      margin :0 auto;
+      width :70%;
+    }
+
+@include mq-up(md) {
+      display :none;
+    }
+  }
+}
+
+.online-banner-wrapper {
+  @include mq-up(md) {
+    margin :12rem auto 4rem;
+    max-width :70rem;
+    width :70rem;
+  }
+
+@include mq-up(lg) {
+    margin :12rem auto 4rem;
+    max-width :100rem;
+    width :100rem;
+  }  background-color :$navy;
+  margin :2rem 0;
+
+  .online-banner-container {
+    @include mq-up(md) {
+      flex-direction :row-reverse;
+    }  display :flex;
+    width :100%;
+
+    .online-banner-contents {
+      @include mq-up(md) {
+        margin :auto;
+        padding :4rem;
+        width :60%;
+      }  padding :1.6rem;
+      width :60%;
+      p {
+        @include mq-up(md) {
+          font-size :2rem;
+        }  color :$white;
+        font-size :1.2rem;
+        font-weight :normal;
+        line-height :1.5em;
+        margin :0;
+        text-align :center;
+      }
+
+      .btn-new {
+        @include mq-up(md) {
+          border :none;
+          border-bottom :0.1rem solid $white;
+          font-size :1.6rem;
+          margin-top :3.2rem;
+          transition :0.3s all;
+          width :50%;
+
+          &::before {
+            background :$white;
+            content :'';
+            height :0.1rem;
+            left :-27.4rem;
+            position :absolute;
+            top :0;
+            -webkit-transition :0.3s;
+                    transition :0.3s;
+            width :100%;
+          }
+
+          &:hover {
+            &::before {
+              background :$white;
+              left :0;
+            }
+
+            span {
+              margin-left :1.6rem;
+            }
+          }
+        }  border :0.1rem solid $white;
+        color :$white;
+        display :block;
+        font-size :1.2rem;
+        margin :1.6rem auto 0;
+        overflow :hidden;
+        padding :1.2rem 0;
+        position :relative;
+        text-align :center;
+        width :80%;
+
+        span {
+          margin-left :0.8rem;
+          transition :0.3s all;
+        }
+      }
+    }
+
+    .online-banner-image {
+      @include mq-up(md) {
+        position :relative;
+        width :50%;
+      }  width :40%;
+      img {
+        @include mq-up(md) {
+          bottom :4rem;
+          height :unset;
+          object-fit :unset;
+          position :absolute;
+          right :2rem;
+          width :80%;
+        }  height :100%;
+        object-fit :cover;
+        width :100%;
+      }
+    }
+  }
+}

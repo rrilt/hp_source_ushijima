@@ -2,17 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>牛島産業</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/import.css">    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
 
   </head>
   <body>
   
-    <div class="view-wrapper">
+    <section class="view-wrapper">
       <div class="navi-wrapper">
         <div class="logo-container">
           <p class="sub-logo">有限会社</p>
@@ -37,72 +38,95 @@
             <div class="swiper-slide"><img src="assets/view_img3.png" alt="view3"></div>
         </div>       
       </div>
+      <div class="background-md"></div>
       
-    </div>
+    </section>
     <header class="animated">
-      <div class="container1100">
-       <div class="header-logo"><h2 >牛島産業</h2></div>
-        <nav>
+      <div class="header-inner">
+       <a href="index.html" class="header-logo"><h2 >牛島産業</h2></a>
+       <div id="nav-toggle">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+        <nav id="gloval-nav">
          <ul >
-            <li><a href="company.html">会社情報</a>
-            </li>
+            <li><a href="company.html">会社情報</a></li>
             <li><a href="service.html">事業内容</a></li>
             <li><a href="works.html">施工事例</a></li>
             <li><a href="recruit.html">求人情報</a></li>
             <li><a href="contact/index.html">お問い合わせ</a></li>
           </ul>
-        </nav>
+        </nav> 
      </div>
     </header>
-    <div class="news-wrapper">
-      <div class="container1100">
+    <section class="news-wrapper">
+      <div class="container980">
         <h2 >牛島産業からのお知らせ</h2>
-        <div class="news-container">
-          <div class="news" id="news1">
-            <div class="genre">トピックス</div>
-            <p class="date">2020/03/12</p>
-            <p class="title">朝日新聞社に掲載されました。</p>
-          </div>
-          <div class="news" id="news2">
-            <div class="genre">トピックス</div>
-            <p class="date">2020/03/12</p>
-            <p class="title">朝日新聞社に掲載されました。</p>
-          </div>
-          <div class="news" id="news3">
-            <div class="genre">トピックス</div>
-            <p class="date">2020/03/12</p>
-            <p class="title">朝日新聞社に掲載されました。</p>
-          </div>
-          <div class="news" id="news4">
-            <div class="genre">トピックス</div>
-            <p class="date">2020/03/12</p>
-            <p class="title">朝日新聞社に掲載されました。</p>
-          </div>
-          <div class="news" id="news5">
-            <div class="genre">トピックス</div>
-            <p class="date">2020/03/12</p>
-            <p class="title">朝日新聞社に掲載されました。</p>
-          </div>
+        <ul class="news-container">
+          <li class="news" id="news1">
+             <div class="news-head">
+                <div class="news-genre">トピックス</div>
+                <time class="news-date">2020/03/12</time>
+              </div>
+              <a href="" class="news-title">朝日新聞社に掲載されました。</a>                       
+          </li>
+          <li class="news" id="news2">
+            <div class="news-head">
+               <div class="news-genre">トピックス</div>
+               <time class="news-date">2020/03/12</time>
+             </div>
+             <a href="" class="news-title">朝日新聞社に掲載されました。</a>                       
+         </li>
+         <li class="news" id="news3">
+          <div class="news-head">
+             <div class="news-genre">トピックス</div>
+             <time class="news-date">2020/03/12</time>
+           </div>
+           <a href="" class="news-title">朝日新聞社に掲載されました。</a>                       
+       </li>
+       <li class="news" id="news4">
+        <div class="news-head">
+           <div class="news-genre">トピックス</div>
+           <time class="news-date">2020/03/12</time>
          </div>
-        <div class="btn-w"><a href="#">お知らせ一覧</a></div>
+         <a href="" class="news-title">朝日新聞社に掲載されました。</a>                       
+     </li>
+     <li class="news" id="news5">
+      <div class="news-head">
+         <div class="news-genre">トピックス</div>
+         <time class="news-date">2020/03/12</time>
+       </div>
+       <a href="" class="news-title">朝日新聞社に掲載されました。</a>                       
+     </li>          
+        </ul>
+
+        <a href="#" class="btn-w">お知らせ一覧<span>→</span></a>
       </div>
-    </div>
-    <div class="about-wrapper">
-      <div class="container1100">
-        <div class="about-left">
+    </section>
+    <section class="about-wrapper">
+      <div class="container980">
+        <div class="about-head-sm">
           <h2 class="title-en">ABOUT</h2>
           <h2 class="title-jp">牛島産業について</h2>
-          <p>「熊本で最も信頼される企業を。」創業者である牛島正幸が抱いた想いから牛島産業は始まりました。1972年以降、道路、河川、橋梁、農業土木工事など社会資本整備事業を受注し続けながら、熊本の発展に貢献するべく活動しております。</p>
-          <div class="btn-b"><a href="company.html">会社情報へ</a></div>
         </div>
         <div class="about-right">
           <figure>
           <img src="assets/about-img2.jpg" alt="about-img"></figure>
         </div>
+        <div class="about-left">
+          <h2 class="title-en">ABOUT</h2>
+          <h2 class="title-jp">牛島産業について</h2>
+          <p>「熊本で最も信頼される企業を。」創業者である牛島正幸が抱いた想いから牛島産業は始まりました。1972年以降、道路、河川、橋梁、農業土木工事など社会資本整備事業を受注し続けながら、熊本の発展に貢献するべく活動しております。</p>
+          <a href="company.html" class="btn-b">会社情報へ<span>→</span></a>
+        </div>
+        
       </div>
-    </div>
-    <div class="work-wrapper">
-      <div class="container1300">
+    </section>
+    <section class="work-wrapper">
+      <div class="work-container">
         <h2 class="title-en">WORKS</h2>
         <h2 class="title-jp">施工実績</h2>
         <div class="list-panel">
@@ -125,7 +149,8 @@
               </div>
               <div class="box-text"><p class="text">NCポールは、プレストレスの導入と遠心成型による高い製造技術で作られた、高強度で耐久性に優れるコンクリートポールです。</p></div>
             </a>
-          </div> <div class="list-panel-items">
+          </div> 
+          <div class="list-panel-items">
             <a class="panel" href="works.html">
               <figure class="image"><img src="assets/wokrs.png" alt="works1"></figure>
               <div class="box-title">
@@ -134,7 +159,8 @@
               </div>
               <div class="box-text"><p class="text">NCポールは、プレストレスの導入と遠心成型による高い製造技術で作られた、高強度で耐久性に優れるコンクリートポールです。</p></div>
             </a>
-          </div> <div class="list-panel-items">
+          </div>
+          <div class="list-panel-items">
             <a class="panel" href="works.html">
               <figure class="image"><img src="assets/wokrs.png" alt="works1"></figure>
               <div class="box-title">
@@ -143,7 +169,8 @@
               </div>
               <div class="box-text"><p class="text">NCポールは、プレストレスの導入と遠心成型による高い製造技術で作られた、高強度で耐久性に優れるコンクリートポールです。</p></div>
             </a>
-          </div> <div class="list-panel-items">
+          </div>
+          <div class="list-panel-items">
             <a class="panel" href="works.html">
               <figure class="image"><img src="assets/wokrs.png" alt="works1"></figure>
               <div class="box-title">
@@ -164,10 +191,10 @@
             </a>
           </div>
         </div>
-        <div class="btn-b"><a href="works.html">実績一覧へ</a></div>
+        <a href="works.html" class="btn-b">実績一覧へ<span>→</span></a>
       </div>
-    </div>
-    <div class="recruit-wrapper">
+    </section>
+    <section class="recruit-wrapper">
       <div class="recruit-container">
         <h2 class="title-en">RECRUIT</h2>
         <h2 class="title-jp">求人情報</h2>
@@ -185,18 +212,26 @@
             <div class="swiper-slide"><img src="assets/recruit5.png" alt="recruit5"></div>
         </div>       
       </div>
-    </div>
-    <div class="store-wrapper">
-      <div class="store-container">
-        <figure><img src="assets/store_2.jpg" alt="store-img"></figure>
-        <div class="store-right">
-          <p class="store-text">内装工事や解体工事で買い取った骨董品を販売しています。</p>
-          <div class="btn-w"><a href="#">オンラインストアへ</a></div>
+      <div class="recruit-body-sm">
+        <p>会社は、ビジネスという「フィールド」で一緒に勝負するチームのようなもの。私たちは、そこで働く一人ひとりがいきいきと活躍し、成長できる後押しをしていきたいと思っています。</p>
+        <div class="btn-o"><a href="recruit.html"><span class="inner-text">求人情報へ</span></a></div>
+      </div>
+    </section>
+
+    <section class="online-banner-wrapper">
+      <div class="online-banner-container">
+        <div class="online-banner-contents">
+          <p>内装工事や解体工事で買い取った<br>骨董品を販売しています。</p>
+          <a href="https://admin.thebase.in/dashboard" target="_blank" class="btn-w">オンラインストアへ<span>→</span></a>
+        </div>
+        <div class="online-banner-image">
+          <img src="assets/store_2.jpg" alt="online store">
         </div>
       </div>
-    </div>
+    </section>
+
     <footer>
-      <div class="container1100">
+      <div class="footer-inner">
       <div class="footer-left">
        <div class="footer-logo">牛島産業</div>
        <address><p><span>〒860-0048</span></p>
@@ -216,10 +251,23 @@
         </ul>
         <ul >
           <li><a href="company.html">お知らせ</a></li>
-          <li><a href="online.html">オンラインストア</a></li>
+          <li><a href="https://admin.thebase.in/dashboard">オンラインストア</a></li>
           <li><a href="privacy.html">プライバシーポリシー</a></li>
         </ul>
         
+      </div>
+      <div class="footer-right-md">
+        <ul>
+          <li><a href="index.html">TOPへ</a></li>
+          <li><a href="company.html">会社情報</a></li>
+          <li><a href="service.html">事業内容</a></li>        
+          <li><a href="works.html">施工事例</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact/index.html">お問い合わせ</a></li>      
+          <li><a href="company.html">お知らせ</a></li>
+          <li><a href="https://admin.thebase.in/dashboard">オンラインストア</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
       </div>
      
     </div>

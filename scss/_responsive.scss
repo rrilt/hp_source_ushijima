@@ -1,0 +1,42 @@
+/*メディアクエリmixin*/
+// 変数の定義
+// min-width
+$breakpoint-up :(
+  //Extra Small devices (smartphone , 399px and up)
+  'xs': 'screen and (min-width: 400px)',
+   //small devices (smartphone landscape, 576px and up)
+  'sm': 'screen and (min-width: 576px)',
+  // Medium devices (tablets, 768px and up)
+  'md': 'screen and (min-width: 768px)',
+  // Lage devices (Laptop, 992px and up)
+  'lg': 'screen and (min-width: 992px)',
+  // Extra Large devices (Desktop, 1200px and up)
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+// max-width
+$breakpoint-down :(
+  'xs': 'screen and (max-width: 399px)',
+  'sm': 'screen and (max-width: 575px)',
+  'md': 'screen and (max-width: 767px)',
+  'lg': 'screen and (max-width: 991px)',
+  'xl': 'screen and (max-width: 1199px)',
+) !default;
+
+// @mixinの定義
+@mixin mq-up($breakpoint :md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-down($breakpoint :md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+/*メディアクエリmixin終了*/
+
+
+
+

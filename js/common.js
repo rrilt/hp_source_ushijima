@@ -4,5 +4,12 @@ $(function() {
     $("head-title").css("margin-top", height + 10);//10pxだけ余裕をもたせる
 });
 
+//ハンバーガーメニュー
 
-  
+(function($) {
+    $(function () {
+      $('#nav-toggle').on('click', function() {
+        $('body').toggleClass('open');
+      });
+    });
+})(jQuery);
