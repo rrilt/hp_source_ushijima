@@ -460,11 +460,11 @@ footer {
         ul {
           font-family :'Noto Serif JP', serif;
           font-weight :normal;
+          margin-top :0;
           padding-left :0;
         }
         li {
           border-bottom :0.1rem solid $white;
-          line-height :2.5;
           padding-bottom :1.6rem;
           padding-left :1.6rem;
           padding-top :1.6rem;

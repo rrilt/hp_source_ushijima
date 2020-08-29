@@ -853,11 +853,11 @@ footer .footer-inner .footer-right li a:hover::before {
   footer .footer-inner .footer-right-md ul {
     font-family: 'Noto Serif JP', serif;
     font-weight: normal;
+    margin-top: 0;
     padding-left: 0;
   }
   footer .footer-inner .footer-right-md li {
     border-bottom: 0.1rem solid #FFFFFF;
-    line-height: 2.5;
     padding-bottom: 1.6rem;
     padding-left: 1.6rem;
     padding-top: 1.6rem;
@@ -1196,6 +1196,7 @@ footer .footer-copyright {
 
 @media screen and (max-width: 767px) {
   .about-wrapper {
+    margin-top: 2rem;
     padding-bottom: 3.2rem;
   }
 }
@@ -1499,6 +1500,7 @@ footer .footer-copyright {
 
 @media screen and (max-width: 767px) {
   .recruit-wrapper {
+    margin-top: 2rem;
     position: static;
   }
 }

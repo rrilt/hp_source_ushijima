@@ -222,6 +222,7 @@
 
 .about-wrapper {
   @include mq-down(md) {
+    margin-top :2rem;
     padding-bottom :3.2rem;
   }  padding-bottom :2.4rem;
 
@@ -435,6 +436,7 @@
 
 .recruit-wrapper {
   @include mq-down(md) {
+    margin-top :2rem;
     position :static ;
   }  position :relative;
   .recruit-container {
