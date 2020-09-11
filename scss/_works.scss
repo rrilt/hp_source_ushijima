@@ -31,14 +31,32 @@
     flex-direction :column;
     margin :0;
     padding :0;
+    width :100%;
 
     .img-card {
       align-items :center;
       display :flex;
       justify-content :center;
+      figure {
+        overflow :hidden;
+        position :relative;
+        width :90%;
+      }
+      figure::before {
+        background :rgba(0,0,0,0);
+        content :'';
+        display :block;
+        padding-top :100%;
+      }
       img {
-        height :auto;
-        max-width :100%;
+        bottom :0;
+        height :100%;
+        left :0;
+        object-fit :cover;
+        object-position :50% 50%;
+        position :absolute;
+        right :0;
+        top :0;
         width :100%;
       }
     }
@@ -104,7 +122,6 @@
   display :-ms-flexbox;
   display :        flex;
   list-style :none;
-  ;
 }
 
 

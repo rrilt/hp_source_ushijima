@@ -151,8 +151,7 @@
 }
 
 .news-wrapper {
-  @include mq-down(md) {
-  }  background-color :$navy;
+  background-color :$navy;
   padding-bottom :4rem;
 
   .container980 {
@@ -169,21 +168,25 @@
     }
     .news-container {
       @include mq-down(md) {
+        display :flex;
+        flex-direction :column;
         margin :0 auto;
-        width :28rem;
       }  padding-bottom :1rem;
+      padding-left :2rem;
+      padding-right :2rem;
       padding-top :5.6rem;
+
 
       .news {
         @include mq-down(md) {
           display :inline-block ;
           height :auto ;
           justify-content :start ;
-          text-align :right ;
         }  align-items :center;
+        border-bottom :1px solid $white;
         display :flex;
         height :1.6rem;
-        justify-content :center;
+        margin-bottom :2rem;
         padding-bottom :2rem;
         text-align :center;
 
@@ -192,13 +195,19 @@
           font-size :1.6rem;
           padding-right :20px;
         }
+        .news-date {
+          width :50%;
+        }
         .news-genre {
-          background-color :$white;
-          border-radius :0.4rem;
-          color :$black;
-          font-size :1rem;
-          margin-right :2.4rem;
-          padding :0.2rem 1.6rem;
+          width :50%;
+          span {
+            background-color :$white;
+            border-radius :0.4rem;
+            color :$black;
+            display :block;
+            font-size :1.4rem;
+            width :100%;
+          }
         }
         .news-title {
           @include mq-down(md) {
@@ -210,7 +219,9 @@
         .news-head {
           @include mq-down(md) {
             padding-bottom :5px;
+            width :100%;
           }  display :flex;
+          width :40%;
         }
       }
     }
